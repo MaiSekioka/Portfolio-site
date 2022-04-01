@@ -621,6 +621,7 @@ $accentColor: #ffcd64;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.02em;
+  word-break: break-all;
 
   @include mediaQuery.mq {
     margin-top: 24px;
