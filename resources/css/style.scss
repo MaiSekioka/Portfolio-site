@@ -453,6 +453,10 @@ $accentColor: #ffcd64;
   transition: all ease .4s;
   cursor: pointer;
 
+  @media screen and (max-width: 1163px){
+    width: (526 / 1084 * 100%);
+  }
+
   @include mediaQuery.mq {
     position: relative;
     width: 100%;

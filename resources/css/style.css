@@ -462,6 +462,11 @@ a:link, a:visited, a:hover, a:active {
   transition: all ease 0.4s;
   cursor: pointer;
 }
+@media screen and (max-width: 1163px) {
+  .Gallery-Card {
+    width: 48.5239852399%;
+  }
+}
 @media screen and (max-width: 767px) {
   .Gallery-Card {
     position: relative;
