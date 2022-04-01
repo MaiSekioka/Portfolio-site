@@ -384,15 +384,16 @@ $accentColor: #ffcd64;
   }
 }
 
-.More-Area {
+.More {
   justify-content: flex-end;
   display: flex;
   margin-top: 24px;
   width: 100%;
+  height: 125px;
   background-image: url(../img/gallery/bg-more-area-line.svg);
   background-repeat: no-repeat;
   background-position: right 24.9% center;
-  background-size: contain;
+  background-size: auto 100%;
 
   @include mediaQuery.mq {
     position: absolute;
@@ -401,12 +402,13 @@ $accentColor: #ffcd64;
     right: 0;
     left: 0;
     justify-content: center;
+    height: 120px;
     background-position: center;
-    background-size: contain;
+    background-size: auto 100%;
   }
 }
 
-.More-Area-Text {
+.More-Text {
   margin-top: 6px;
   margin-right: 36px;
   display: block;
@@ -422,23 +424,26 @@ $accentColor: #ffcd64;
   @include mediaQuery.mq {
     margin-top: 19px;
     margin-right: 26px;
+    padding-right: 10px;
   }
 }
 
-.More-Area-FootPrints {
+.More-FootPrints-Area {
   margin-right: 20%;
   width: 30px;
   height: 124px;
-  background-image: url(../img/gallery/more-area-footprint.svg);
-  background-position: center;
-  background-size: contain;
 
   @include mediaQuery.mq(lmd) {
     margin-right: 18%;
   }
 
   @include mediaQuery.mq {
+    align-items: flex-end;
+    display: flex;
     margin-right: 0;
+    margin-left: -5px;
+    width: 15px;
+    height: 120px;
   }
 }
 
@@ -757,4 +762,42 @@ $accentColor: #ffcd64;
   @include mediaQuery.mq {
     margin-top: 41px;
   }
+}
+
+.st2{
+  fill: none;
+}
+
+@keyframes drawLine {
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+
+#More-Footprint01,
+#More-Footprint02,
+#More-Footprint03 {
+  fill-opacity: 0;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 301;
+  animation: drawLine .1s linear forwards;
+  transition: fill-opacity .1s;
+}
+
+#More-Footprint01.done .st2{
+  fill: #1a283e;
+  fill-opacity: 1;
+  transition: fill-opacity .2s;
+}
+#More-Footprint02.done .st2{
+  fill: #1a283e;
+  fill-opacity: 1;
+  transition: fill-opacity .2s;
+  transition-delay: .3s;
+}
+#More-Footprint03.done .st2{
+  fill: #1a283e;
+  fill-opacity: 1;
+  transition: fill-opacity .2s;
+  transition-delay: .6s;
 }

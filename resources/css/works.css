@@ -417,30 +417,32 @@ a:link, a:visited, a:hover, a:active {
   }
 }
 
-.More-Area {
+.More {
   justify-content: flex-end;
   display: flex;
   margin-top: 24px;
   width: 100%;
+  height: 125px;
   background-image: url(../img/gallery/bg-more-area-line.svg);
   background-repeat: no-repeat;
   background-position: right 24.9% center;
-  background-size: contain;
+  background-size: auto 100%;
 }
 @media screen and (max-width: 767px) {
-  .More-Area {
+  .More {
     position: absolute;
     z-index: 1;
     bottom: -80px;
     right: 0;
     left: 0;
     justify-content: center;
+    height: 120px;
     background-position: center;
-    background-size: contain;
+    background-size: auto 100%;
   }
 }
 
-.More-Area-Text {
+.More-Text {
   margin-top: 6px;
   margin-right: 36px;
   display: block;
@@ -450,33 +452,36 @@ a:link, a:visited, a:hover, a:active {
   font-style: normal;
 }
 @media screen and (max-width: 959px) {
-  .More-Area-Text {
+  .More-Text {
     margin-right: 40px;
   }
 }
 @media screen and (max-width: 767px) {
-  .More-Area-Text {
+  .More-Text {
     margin-top: 19px;
     margin-right: 26px;
+    padding-right: 10px;
   }
 }
 
-.More-Area-FootPrints {
+.More-FootPrints-Area {
   margin-right: 20%;
   width: 30px;
   height: 124px;
-  background-image: url(../img/gallery/more-area-footprint.svg);
-  background-position: center;
-  background-size: contain;
 }
 @media screen and (max-width: 959px) {
-  .More-Area-FootPrints {
+  .More-FootPrints-Area {
     margin-right: 18%;
   }
 }
 @media screen and (max-width: 767px) {
-  .More-Area-FootPrints {
+  .More-FootPrints-Area {
+    align-items: flex-end;
+    display: flex;
     margin-right: 0;
+    margin-left: -5px;
+    width: 15px;
+    height: 120px;
   }
 }
 
@@ -798,5 +803,51 @@ a:link, a:visited, a:hover, a:active {
   .Works-Footer-CopyText {
     margin-top: 41px;
   }
+}
+
+.st2 {
+  fill: none;
+}
+
+@-webkit-keyframes drawLine {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawLine {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+#More-Footprint01,
+#More-Footprint02,
+#More-Footprint03 {
+  fill-opacity: 0;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 301;
+  -webkit-animation: drawLine 0.1s linear forwards;
+          animation: drawLine 0.1s linear forwards;
+  transition: fill-opacity 0.1s;
+}
+
+#More-Footprint01.done .st2 {
+  fill: #1a283e;
+  fill-opacity: 1;
+  transition: fill-opacity 0.2s;
+}
+
+#More-Footprint02.done .st2 {
+  fill: #1a283e;
+  fill-opacity: 1;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.3s;
+}
+
+#More-Footprint03.done .st2 {
+  fill: #1a283e;
+  fill-opacity: 1;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.6s;
 }
 /*# sourceMappingURL=works.css.map */
