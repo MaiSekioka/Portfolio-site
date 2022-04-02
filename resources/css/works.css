@@ -142,6 +142,20 @@ a:link, a:visited, a:hover, a:active {
   }
 }
 
+.Introduce-Image {
+  display: block;
+  width: 100%;
+  padding-top: 75.0847457627%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .Introduce-Image {
+    padding-top: 75.1724137931%;
+  }
+}
+
 .Introduce-LinkBtn-Box {
   align-items: center;
   justify-content: space-between;

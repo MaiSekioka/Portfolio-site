@@ -113,6 +113,20 @@ $accentColor: #ffcd64;
   }
 }
 
+
+.Introduce-Image {
+  display: block;
+  width: 100%;
+  padding-top: (443 / 590 * 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include mediaQuery.mq {
+    padding-top: (218 / 290 * 100%);
+  }
+}
+
 .Introduce-LinkBtn-Box {
   align-items: center;
   justify-content: space-between;
