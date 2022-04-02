@@ -432,6 +432,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .More {
+  align-items: flex-start;
   justify-content: flex-end;
   display: flex;
   margin-top: 24px;
@@ -456,26 +457,30 @@ a:link, a:visited, a:hover, a:active {
   }
 }
 
-.More-Text {
+.More-Scroll-Btn {
   margin-top: 6px;
   margin-right: 36px;
-  display: block;
   font-family: futura-pt, sans-serif;
   line-height: 1;
   font-weight: 500;
   font-style: normal;
+  transition: all 0.3s;
 }
 @media screen and (max-width: 959px) {
-  .More-Text {
+  .More-Scroll-Btn {
     margin-right: 40px;
   }
 }
 @media screen and (max-width: 767px) {
-  .More-Text {
+  .More-Scroll-Btn {
     margin-top: 19px;
     margin-right: 26px;
     padding-right: 10px;
   }
+}
+.More-Scroll-Btn:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
 }
 
 .More-FootPrints-Area {

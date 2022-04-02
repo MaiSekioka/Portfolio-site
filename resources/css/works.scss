@@ -399,6 +399,7 @@ $accentColor: #ffcd64;
 }
 
 .More {
+  align-items: flex-start;
   justify-content: flex-end;
   display: flex;
   margin-top: 24px;
@@ -422,14 +423,14 @@ $accentColor: #ffcd64;
   }
 }
 
-.More-Text {
+.More-Scroll-Btn {
   margin-top: 6px;
   margin-right: 36px;
-  display: block;
   font-family: futura-pt, sans-serif;
   line-height: 1;
   font-weight: 500;
   font-style: normal;
+  transition: all .3s;
 
   @include mediaQuery.mq(lmd) {
     margin-right: 40px;
@@ -439,6 +440,11 @@ $accentColor: #ffcd64;
     margin-top: 19px;
     margin-right: 26px;
     padding-right: 10px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all .3s;
   }
 }
 
