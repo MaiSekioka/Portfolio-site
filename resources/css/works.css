@@ -200,10 +200,15 @@ a:link, a:visited, a:hover, a:active {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #ffcd64;
+  background-color: #1d293f;
   transform-origin: center;
   transform: scale(0, 1);
   transition: all ease-in 0.2s;
+}
+.Introduce-LinkBtn-WebSite:hover {
+  border: 1px solid #1d293f;
+  color: #fff;
+  transition: all 0.3s;
 }
 .Introduce-LinkBtn-WebSite:hover:after {
   opacity: 1;
@@ -237,11 +242,16 @@ a:link, a:visited, a:hover, a:active {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #ffcd64;
+  background-color: #1d293f;
   transform-origin: center;
   transform: scale(0, 1);
   opacity: 0.5;
   transition: all ease-in 0.2s;
+}
+.Introduce-LinkBtn-GitHub:hover {
+  border: 1px solid #1d293f;
+  color: #fff;
+  transition: all 0.3s;
 }
 .Introduce-LinkBtn-GitHub:hover:after {
   opacity: 1;
