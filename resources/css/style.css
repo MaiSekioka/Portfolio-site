@@ -58,6 +58,10 @@ a:link, a:visited, a:hover, a:active {
   }
 }
 
+.No-Scroll {
+  overflow-y: hidden;
+}
+
 .Header {
   position: absolute;
   z-index: 3;

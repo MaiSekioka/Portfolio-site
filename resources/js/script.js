@@ -1,15 +1,18 @@
 
 $('.Burger-Btn').on('click', function(){
   $('.Header').toggleClass('is-drawerActive');
+  $('html,body').toggleClass('No-Scroll');
 });
 
 $('.Nav-Menu-Bg').on('click', function(){
   $('.Header').toggleClass('is-drawerActive');
+  $('html,body').toggleClass('No-Scroll');
 });
 
 $('.Header-Nav-List-Link').on('click', function(){
   if($('.Header').hasClass('is-drawerActive')) {
     $('.Header').removeClass('is-drawerActive');
+    $('html,body').toggleClass('No-Scroll');
   }
 });
 

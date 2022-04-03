@@ -33,6 +33,10 @@ $accentColor: #ffcd64;
   }
 }
 
+.No-Scroll {
+  overflow-y: hidden;
+}
+
 .Header {
   position: absolute;
   z-index: 3;
