@@ -67,106 +67,31 @@ $('.ToTopBtn').on('click', function(){
   },500);
 });
 
-new Vivus('MainVisual-Footprints',{
-  duration: 50,
-  type: 'oneByOne',
-  start: 'inViewport'
-},function(){
-  $('#MainVisual-Footprint01').attr('class','done');
-  $('#MainVisual-Footprint02').attr('class','done');
-  $('#MainVisual-Footprint03').attr('class','done');
-  $('#MainVisual-Footprint04').attr('class','done');
-  $('#MainVisual-Footprint05').attr('class','done');
-  $('#MainVisual-Footprint06').attr('class','done');
-});
+animateSvg();
 
-new Vivus('MainVisual-SP-Footprints',{
-  duration: 50,
-  type: 'oneByOne',
-  start: 'inViewport'
-},function(){
-  $('#MainVisual-SP-Footprint01').attr('class','done');
-  $('#MainVisual-SP-Footprint02').attr('class','done');
-  $('#MainVisual-SP-Footprint03').attr('class','done');
-  $('#MainVisual-SP-Footprint04').attr('class','done');
-  $('#MainVisual-SP-Footprint05').attr('class','done');
-  $('#MainVisual-SP-Footprint06').attr('class','done');
-});
+function animateSvg(){
+  const elements = document.querySelectorAll('.js-animation');
 
-new Vivus('Ability-SP-Footprints',{
-  duration: 20,
-  type: 'delayed',
-  start: 'inViewport',
-  animTimingFunction: Vivus.EASE_IN
-},function(){
-  $('#Ability-SP-Footprint01').attr('class','done');
-  $('#Ability-SP-Footprint02').attr('class','done');
-  $('#Ability-SP-Footprint03').attr('class','done');
-  $('#Ability-SP-Footprint04').attr('class','done');
-  $('#Ability-SP-Footprint05').attr('class','done');
-  $('#Ability-SP-Footprint06').attr('class','done');
-});
+  const options = {
+    threshold: 0.5
+  };
 
-new Vivus('Ability-Freeline',{
-  duration: 150,
-  type: 'oneByOne',
-  start: 'inViewport'
-},function(){
-  $('#Footprint01').attr('class','done');
-  $('#Footprint02').attr('class','done');
-  $('#Footprint03').attr('class','done');
-  $('#Footprint04').attr('class','done');
-  $('#Footprint05').attr('class','done');
-});
+  const observer = new IntersectionObserver(showElement,options);
 
-new Vivus('Ability-SP-Freeline',{
-  duration: 100,
-  type: 'delayed',
-  start: 'inViewport',
-  animTimingFunction: Vivus.EASE
-},function(){
-  ;
-});
+  elements.forEach(element => {
+    observer.observe(element);
+  });
 
-new Vivus('Footer-Footprints',{
-  duration: 50,
-  type: 'delayed',
-  start: 'inViewport'
-},function(){
-  $('#Footer-Footprint01').attr('class','done');
-  $('#Footer-Footprint02').attr('class','done');
-  $('#Footer-Footprint03').attr('class','done');
-  $('#Footer-Footprint04').attr('class','done');
-  $('#Footer-Footprint05').attr('class','done');
-  $('#Footer-Footprint06').attr('class','done');
-  $('#Footer-Footprint07').attr('class','done');
-  $('#Footer-Footprint08').attr('class','done');
-  $('#Footer-Footprint09').attr('class','done');
-  $('#Footer-Footprint10').attr('class','done');
-  $('#Footer-Footprint11').attr('class','done');
-  $('#Footer-Footprint12').attr('class','done');
-  $('#Footer-Footprint13').attr('class','done');
-  $('#Footer-Footprint14').attr('class','done');
-});
-
-new Vivus('Footer-SP-Footprints',{
-  duration: 50,
-  type: 'delayed',
-  start: 'inViewport'
-},function(){
-  $('#Footer-SP-Footprint01').attr('class','done');
-  $('#Footer-SP-Footprint02').attr('class','done');
-  $('#Footer-SP-Footprint03').attr('class','done');
-  $('#Footer-SP-Footprint04').attr('class','done');
-  $('#Footer-SP-Footprint05').attr('class','done');
-  $('#Footer-SP-Footprint06').attr('class','done');
-  $('#Footer-SP-Footprint07').attr('class','done');
-  $('#Footer-SP-Footprint08').attr('class','done');
-  $('#Footer-SP-Footprint09').attr('class','done');
-  $('#Footer-SP-Footprint10').attr('class','done');
-  $('#Footer-SP-Footprint11').attr('class','done');
-  $('#Footer-SP-Footprint12').attr('class','done');
-  $('#Footer-SP-Footprint13').attr('class','done');
-  $('#Footer-SP-Footprint14').attr('class','done');
-  $('#Footer-SP-Footprint15').attr('class','done');
-});
+  function showElement(entries){
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        let children = entry.target.children;
+        window.setTimeout(function(){
+            for(i = 0; i < children.length; i++){
+              children[i].classList.add('done');
+            } 
+          },800);
+      }
+    })
+  }
+}
