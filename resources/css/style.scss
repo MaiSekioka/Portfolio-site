@@ -381,9 +381,9 @@ $accentColor: #ffcd64;
 
   @include mediaQuery.mq {
     padding-top: 30px;
-    padding-bottom: 95px;
+    padding-bottom: 57px;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 0;
   }
 
   &__Inner {
@@ -447,8 +447,8 @@ $accentColor: #ffcd64;
 
   @include mediaQuery.mq {
     margin-top: 54px;
-    overflow-y: scroll;
-    height: 1187px;
+    overflow-x: scroll;
+    min-height: 346px;
   }
 }
 
@@ -460,8 +460,11 @@ $accentColor: #ffcd64;
   width: 1084px;
   
   @include mediaQuery.mq {
-    row-gap: 55px;
+    flex-wrap: nowrap;
+    column-gap: 32px;
+    row-gap: 0;
     width: 100%;
+    min-height: 346px;
   }
 }
 
@@ -482,9 +485,9 @@ $accentColor: #ffcd64;
   }
 
   @include mediaQuery.mq {
-    position: relative;
-    width: 100%;
-    min-height: 315px;
+    min-width: 340px;
+    min-height: auto;
+    max-height: 320px;
   }
 
   &:hover {
@@ -499,36 +502,14 @@ $accentColor: #ffcd64;
     }
   }
 
-  &::after {
-    @include mediaQuery.mq {
-      content: '';
-      position: absolute;
-      bottom: -68px;
-      right: 50%;
-      display: block;
-      width: 3px;
-      height: 68px;
-      background-color: $textColor;
-    }
-  }
-
   &:last-of-type::after {
-    @include mediaQuery.mq {
-      display: none;
-    }
-  } 
-}
-
-.Gallery-Card:last-of-type::before {
-  @include mediaQuery.mq {
-    content: '';
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -12px;
+    content: '';
+    top: 0;
+    right: -15px;
     display: block;
-    width: 100%;
-    height: 12px;
+    width: 15px;
+    height: 100%;
   }
 }
 
@@ -540,10 +521,6 @@ $accentColor: #ffcd64;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  @include mediaQuery.mq {
-    padding-top: calc(200 / 290 * 100%);
-  }
 }
 
 .Gallery-Card-Body {
@@ -552,13 +529,6 @@ $accentColor: #ffcd64;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-
-  @include mediaQuery.mq {
-    padding-top: 18px;
-    padding-bottom: 21px;
-    padding-left: 14px;
-    padding-right: 14px;
-  }
 
   &::before {
     content: '';
@@ -582,10 +552,6 @@ $accentColor: #ffcd64;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.02em;
-
-  @include mediaQuery.mq {
-    font-size: 2rem;
-  }
 }
 
 .Gallery-Card-Lead {
@@ -594,11 +560,6 @@ $accentColor: #ffcd64;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.05em;
-
-  @include mediaQuery.mq {
-    margin-top: 14px;
-    font-size: 1.4rem;
-  }
 }
 
 .Gallery-Card-Target {
@@ -608,12 +569,6 @@ $accentColor: #ffcd64;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.04em;
-
-  @include mediaQuery.mq {
-    margin-top: 8px;
-    font-size: 1.4rem;
-    white-space: nowrap;
-  }
 }
 
 .Gallery-Card-Badge {
@@ -628,13 +583,6 @@ $accentColor: #ffcd64;
   font-size: 1.3rem;
   line-height: 1;
   color: #fff;
-
-  @include mediaQuery.mq {
-    margin-right: 10px;
-    width: 50px;
-    height: 20px;
-    font-size: 1.2rem;
-  }
 }
 
 .Gallery-Bg-Diamond-TopRight {
@@ -654,6 +602,7 @@ $accentColor: #ffcd64;
   }
 
   @include mediaQuery.mq {
+    top: 34px;
     right: -185px;
     width: 398px;
     height: 230px;
@@ -676,7 +625,8 @@ $accentColor: #ffcd64;
   }
 
   @include mediaQuery.mq {
-    right: -167px;
+    bottom: -59px;
+    left: -167px;
     width: 398px;
     height: 230px;
   }
