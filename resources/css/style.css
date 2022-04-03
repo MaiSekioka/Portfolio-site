@@ -336,6 +336,10 @@ a:link, a:visited, a:hover, a:active {
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.05em;
+  transform: scale(1);
+  transition: all 0.3s;
+  -webkit-animation: floatScrollText ease 2s infinite;
+          animation: floatScrollText ease 2s infinite;
 }
 @media screen and (min-width: 1440px) {
   .MainVisual-Scroll-Btn {
@@ -351,7 +355,34 @@ a:link, a:visited, a:hover, a:active {
     line-height: 1.3333;
   }
 }
+.MainVisual-Scroll-Btn:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
 
+@-webkit-keyframes floatScrollText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatScrollText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .Gallery {
   position: relative;
   justify-content: center;

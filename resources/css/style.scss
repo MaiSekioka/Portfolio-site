@@ -332,6 +332,9 @@ $accentColor: #ffcd64;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.05em;
+  transform: scale(1);
+  transition: all .3s;
+  animation: floatScrollText ease 2s infinite;
 
   @include mediaQuery.mq(xl){
     bottom: 162px;
@@ -343,6 +346,23 @@ $accentColor: #ffcd64;
     bottom: 28vmin;
     font-size: 1.2rem;
     line-height: 1.3333;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all .3s;
+  }
+}
+
+@keyframes floatScrollText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
