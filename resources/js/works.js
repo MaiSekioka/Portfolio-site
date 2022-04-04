@@ -1,15 +1,3 @@
-new Vivus('More-Footprints',{
-  duration: 50,
-  type: 'oneByOne',
-  start: 'inViewport'
-},function(){
-  $('#More-Footprint01').attr('class','done');
-  $('#More-Footprint02').attr('class','done');
-  $('#More-Footprint03').attr('class','done');
-  $('#More-Footprint04').attr('class','done');
-  $('#More-Footprint05').attr('class','done');
-  $('#More-Footprint06').attr('class','done');
-});
 
 $('.More-Scroll-Btn').on('click', function(event) {
   event.preventDefault();
@@ -17,3 +5,33 @@ $('.More-Scroll-Btn').on('click', function(event) {
   const sectionHeight = $(id).offset().top;
   $('html, body').animate({scrollTop: sectionHeight}, 500, 'swing');
 });
+
+
+animateSvg();
+
+function animateSvg(){
+  const elements = document.querySelectorAll('.js-animation');
+
+  const options = {
+    threshold: 0.5
+  };
+
+  const observer = new IntersectionObserver(showElement,options);
+
+  elements.forEach(element => {
+    observer.observe(element);
+  });
+
+  function showElement(entries){
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        let children = entry.target.children;
+        window.setTimeout(function(){
+            for(i = 0; i < children.length; i++){
+              children[i].classList.add('done');
+            } 
+          },800);
+      }
+    })
+  }
+}
