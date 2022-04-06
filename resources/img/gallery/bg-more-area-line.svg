@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="3" height="120" viewBox="0 0 3 120">
-  <path id="線_115" data-name="線 115" d="M1.5,120h-3V0h3Z" transform="translate(1.5)" fill="#333"/>
-</svg>
+<svg height="120" viewBox="0 0 3 120" width="3" xmlns="http://www.w3.org/2000/svg"><path d="m1.5 120h-3v-120h3z" fill="#333" transform="translate(1.5)"/></svg>

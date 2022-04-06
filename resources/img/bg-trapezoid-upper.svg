@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="774" height="535" viewBox="0 0 774 535">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="長方形_189" data-name="長方形 189" width="774" height="535" transform="translate(20 2957)" fill="none" stroke="#707070" stroke-width="1"/>
-    </clipPath>
-  </defs>
-  <g id="マスクグループ_21" data-name="マスクグループ 21" transform="translate(-20 -2957)" clip-path="url(#clip-path)">
-    <path id="前面オブジェクトで型抜き_1" data-name="前面オブジェクトで型抜き 1" d="M674.278,405.014H0V95.463L95.493,0H578.785l95.494,95.462v309.55Z" transform="translate(20.161 3099.015) rotate(-14)" fill="#8aa6d9" opacity="0.3"/>
-  </g>
-</svg>
+<svg height="535" viewBox="0 0 774 535" width="774" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m20 2957h774v535h-774z"/></clipPath><g clip-path="url(#a)" transform="translate(-20 -2957)"><path d="m674.278 405.014h-674.278v-309.551l95.493-95.463h483.292l95.494 95.462v309.55z" fill="#8aa6d9" opacity=".3" transform="matrix(.97029573 -.2419219 .2419219 .97029573 20.161 3099.015)"/></g></svg>

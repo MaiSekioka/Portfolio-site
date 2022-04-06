@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="15.2" height="36.48" viewBox="0 0 15.2 36.48">
-  <path id="多角形_3" data-name="多角形 3" d="M16.96,1.067a2,2,0,0,1,2.561,0l12.716,10.6a2,2,0,0,1-1.28,3.536H5.524a2,2,0,0,1-1.28-3.536Z" transform="translate(15.2) rotate(90)" fill="#1f293d"/>
-</svg>
+<svg height="36.48" viewBox="0 0 15.2 36.48" width="15.2" xmlns="http://www.w3.org/2000/svg"><path d="m16.96 1.067a2 2 0 0 1 2.561 0l12.716 10.6a2 2 0 0 1 -1.28 3.536h-25.433a2 2 0 0 1 -1.28-3.536z" fill="#1f293d" transform="matrix(0 1 -1 0 15.2 0)"/></svg>

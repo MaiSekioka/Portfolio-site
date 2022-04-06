@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="19.045" height="19.869" viewBox="0 0 19.045 19.869">
-  <g id="グループ_46" data-name="グループ 46" transform="translate(-1348.879 -3122.448)">
-    <path id="パス_4" data-name="パス 4" d="M2681.117,2750.275l7.5-7.322,7.3,7.322" transform="translate(-1330.117 380.995)" fill="none" stroke="#1d293f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-    <path id="パス_5" data-name="パス 5" d="M2693,2739.954v16.492" transform="translate(-1334.599 384.371)" fill="none" stroke="#1d293f" stroke-linecap="round" stroke-width="3"/>
-  </g>
-</svg>
+<svg height="19.869" viewBox="0 0 19.045 19.869" width="19.045" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#1d293f" stroke-linecap="round" stroke-width="3"><path d="m2681.117 2750.275 7.5-7.322 7.3 7.322" stroke-linejoin="round" transform="translate(-2678.996 -2741.453)"/><path d="m2693 2739.954v16.492" transform="translate(-2683.478 -2738.077)"/></g></svg>
