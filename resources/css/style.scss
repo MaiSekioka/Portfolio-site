@@ -71,7 +71,7 @@ $accentColor: #ffcd64;
 .Header.is-fixed {
   position: fixed;
   height: 72px;
-  background-color: rgba($color: $baseColor, $alpha: .4);
+  background-color: rgba($color: #fff, $alpha: .7);
 
   @include mediaQuery.mq {
     height: 60px;
