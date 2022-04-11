@@ -2014,10 +2014,17 @@ a:link, a:visited, a:hover, a:active {
   width: 170px;
   height: 173px;
   fill: none;
-  stroke: #fff;
+  stroke: #1d293f;
   stroke-width: 4;
   stroke-linecap: round;
   stroke-miterlimit: 10;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+}
+
+#Ability-SP-Freeline.done {
+  stroke-dashoffset: 0;
+  transition: all ease-in-out 1.2s;
 }
 
 .Footer-Footprints-Area {
