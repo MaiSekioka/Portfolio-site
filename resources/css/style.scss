@@ -145,7 +145,7 @@ $accentColor: #ffcd64;
     no-repeat,
     no-repeat;
     background-position:
-    bottom 50% left,
+    bottom 80% left 50%,
     top center,
     center;
     background-size:
@@ -448,6 +448,7 @@ $accentColor: #ffcd64;
   @include mediaQuery.mq {
     margin-top: 54px;
     overflow-x: scroll;
+    overflow-y: hidden;
     min-height: 346px;
   }
 }
@@ -526,9 +527,9 @@ $accentColor: #ffcd64;
 .Gallery-Card-Body {
   position: relative;
   padding-top: 16px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   &::before {
     content: '';
@@ -1930,7 +1931,7 @@ $accentColor: #ffcd64;
   width: 170px;
   height: 173px;
   fill: none;
-  stroke: $subBlue;
+  stroke: $textColor;
   stroke-width: 4;
   stroke-linecap: round;
   stroke-miterlimit: 10;

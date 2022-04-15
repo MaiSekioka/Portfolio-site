@@ -5,7 +5,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "TsukuBRdGothic-Regular", "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", sans-serif;
+  font-family: fot-tsukubrdgothic-std, "TsukuBRdGothic-Regular", "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", sans-serif;
   color: #333333;
   position: relative;
   overflow-x: hidden;
@@ -159,7 +159,7 @@ a:link, a:visited, a:hover, a:active {
     min-height: 100vh;
     background: url(../img/bg-nav-menu-bg-freeline.svg), url(../img/bg-nav-menu-bg-straight-line.svg), #1d293f;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: bottom 50% left, top center, center;
+    background-position: bottom 80% left 50%, top center, center;
     background-size: cover, auto, cover;
     transform: translateX(100%);
     transition: all 0.4s;
@@ -467,6 +467,7 @@ a:link, a:visited, a:hover, a:active {
   .Gallery-Cards-Wrapper {
     margin-top: 54px;
     overflow-x: scroll;
+    overflow-y: hidden;
     min-height: 346px;
   }
 }
@@ -546,9 +547,9 @@ a:link, a:visited, a:hover, a:active {
 .Gallery-Card-Body {
   position: relative;
   padding-top: 16px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .Gallery-Card-Body::before {
   content: "";
@@ -2014,7 +2015,7 @@ a:link, a:visited, a:hover, a:active {
   width: 170px;
   height: 173px;
   fill: none;
-  stroke: #1d293f;
+  stroke: #333333;
   stroke-width: 4;
   stroke-linecap: round;
   stroke-miterlimit: 10;
