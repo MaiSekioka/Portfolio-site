@@ -1,5 +1,6 @@
 @charset "UTF-8";
 html {
+  overflow-x: hidden;
   font-size: 62.5%;
 }
 
@@ -106,7 +107,7 @@ a:link, a:visited, a:hover, a:active {
 
 @media screen and (max-width: 767px) {
   .Header-Nav {
-    visibility: visible;
+    visibility: hidden;
     transform: translateX(150%);
     transition: all 0.4s;
   }

@@ -80,7 +80,7 @@ $accentColor: #ffcd64;
 
 .Header-Nav {
   @include mediaQuery.mq {
-    visibility: visible;
+    visibility: hidden;
     transform: translateX(150%);
     transition: all .4s;
   }
