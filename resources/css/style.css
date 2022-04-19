@@ -867,11 +867,12 @@ a:link, a:visited, a:hover, a:active {
 .Personality-Media::after {
   content: "";
   position: absolute;
+  z-index: -1;
   left: 50%;
   bottom: -90px;
   display: block;
   width: 4px;
-  height: 90px;
+  height: 91px;
   background-color: #333333;
 }
 @media screen and (max-width: 767px) {
@@ -1007,7 +1008,6 @@ a:link, a:visited, a:hover, a:active {
 
 .Ability-Line {
   display: block;
-  border-radius: 2px;
   width: 4px;
   height: 120px;
   background-color: #333333;

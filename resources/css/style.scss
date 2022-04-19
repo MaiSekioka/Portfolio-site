@@ -837,11 +837,12 @@ $accentColor: #ffcd64;
 .Personality-Media::after {
   content: '';
   position: absolute;
+  z-index: -1;
   left: 50%;
   bottom: -90px;
   display: block;
   width: 4px;
-  height: 90px;
+  height: 91px;
   background-color: $textColor;
 
   @include mediaQuery.mq {
@@ -978,7 +979,6 @@ $accentColor: #ffcd64;
 
 .Ability-Line {
   display: block;
-  border-radius: 2px;
   width: 4px;
   height: 120px;
   background-color: $textColor;
