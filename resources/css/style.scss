@@ -263,9 +263,7 @@ $accentColor: #ffcd64;
   padding-right: 40px;
 
   @include mediaQuery.mq {
-    min-height: auto;
-    height: 100vh;
-    max-height: 811px;
+    min-height: 811px;
     padding-left: 15px;
     padding-right: 15px;
     background: url(../img/mainvisual-sm.svg);
@@ -285,7 +283,7 @@ $accentColor: #ffcd64;
     background-size: 100% auto;
 
     @include mediaQuery.mq {
-      padding-top: 162px;
+      padding-top: 100px;
       background: none;
     }
   }

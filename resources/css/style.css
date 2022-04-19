@@ -267,9 +267,7 @@ a:link, a:visited, a:hover, a:active {
 }
 @media screen and (max-width: 767px) {
   .MainVisual {
-    min-height: auto;
-    height: 100vh;
-    max-height: 811px;
+    min-height: 811px;
     padding-left: 15px;
     padding-right: 15px;
     background: url(../img/mainvisual-sm.svg);
@@ -290,7 +288,7 @@ a:link, a:visited, a:hover, a:active {
 }
 @media screen and (max-width: 767px) {
   .MainVisual__Inner {
-    padding-top: 162px;
+    padding-top: 100px;
     background: none;
   }
 }
