@@ -505,12 +505,18 @@ a:link, a:visited, a:hover, a:active {
 }
 @media screen and (max-width: 767px) {
   .More-FootPrints-Area {
-    align-items: flex-end;
-    display: flex;
+    position: relative;
     margin-right: 0;
     margin-left: -5px;
     width: 15px;
     height: 120px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .More-Footprints {
+    position: absolute;
+    bottom: 0;
   }
 }
 

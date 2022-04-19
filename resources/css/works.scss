@@ -464,12 +464,18 @@ $accentColor: #ffcd64;
   }
 
   @include mediaQuery.mq {
-    align-items: flex-end;
-    display: flex;
+    position: relative;
     margin-right: 0;
     margin-left: -5px;
     width: 15px;
     height: 120px;
+  }
+}
+
+.More-Footprints {
+  @include mediaQuery.mq {
+    position: absolute;
+    bottom: 0;
   }
 }
 
