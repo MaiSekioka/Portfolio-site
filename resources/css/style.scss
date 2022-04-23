@@ -389,6 +389,34 @@ $accentColor: #ffcd64;
     z-index: 1;
     width: 100%;
     max-width: 1280px;
+
+    &:after {
+      @include mediaQuery.mq {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        right: 15px;
+        display: block;
+        width: 56px;
+        height: 10px;
+        background-image: url(../img/gallery-arrow.svg);
+        background-position: center;
+        background-size: contain;
+        animation: slideArrow 1.2s ease-in-out infinite reverse;
+      }
+    }
+  }
+}
+
+@keyframes slideArrow {
+  0% {
+    right: 15px;
+  }
+  50% {
+    right: 20px;
+  }
+  100% {
+    right: 15px;
   }
 }
 
