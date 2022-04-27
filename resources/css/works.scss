@@ -52,7 +52,7 @@ $accentColor: #ffcd64;
   position: relative;
   font-size: 3.6rem;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.05em;
 
@@ -133,7 +133,7 @@ $accentColor: #ffcd64;
   display: flex;
   margin-top: 30px;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.05em;
 
@@ -243,8 +243,8 @@ $accentColor: #ffcd64;
   display: flex;
   margin-top: 12px;
   line-height: 1;
-  font-family: poppins;
-  font-weight: 500;
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0.05em;
 
@@ -334,7 +334,7 @@ $accentColor: #ffcd64;
   height: 24px;
   background-color: $subBlue;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   color: #fff;
 
@@ -349,7 +349,7 @@ $accentColor: #ffcd64;
   margin-top: -5px;
   margin-left: 12px;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   line-height: 1.5;
   word-break: break-all;
@@ -364,7 +364,7 @@ $accentColor: #ffcd64;
 .Introduce-Media-Overview-Text {
   margin-top: 40px;
   line-height: 2;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0.04em;
 
@@ -377,7 +377,7 @@ $accentColor: #ffcd64;
 .Introduce-Media-Time-Text {
   margin-top: 36px;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.05em;
   word-break: break-all;
@@ -392,7 +392,8 @@ $accentColor: #ffcd64;
 .Introduce-Media-Technique-Text {
   margin-top: 16px;
   font-size: 1.8rem;
-  font-weight: 700;
+  line-height: 1.75;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.05em;
   word-break: break-all;
@@ -432,9 +433,9 @@ $accentColor: #ffcd64;
 .More-Scroll-Btn {
   margin-top: 6px;
   margin-right: 36px;
-  font-family: poppins;
+  font-family: 'Josefin Sans';
   line-height: 1;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   transition: all .3s;
 
@@ -444,8 +445,6 @@ $accentColor: #ffcd64;
 
   @include mediaQuery.mq {
     margin-top: 19px;
-    margin-right: 26px;
-    padding-right: 10px;
   }
 
   &:hover {
@@ -465,8 +464,8 @@ $accentColor: #ffcd64;
 
   @include mediaQuery.mq {
     position: relative;
+    left: -10px;
     margin-right: 0;
-    margin-left: -5px;
     width: 15px;
     height: 120px;
   }
@@ -637,7 +636,7 @@ $accentColor: #ffcd64;
 .Description-Text-Box-Title {
   font-size: 3.2rem;
   line-height: 1.6;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.05em;
 
@@ -771,7 +770,7 @@ $accentColor: #ffcd64;
   position: relative;
   font-size: 1.8rem;
   line-height: 1;
-  font-family: poppins;
+  font-family: 'Josefin Sans';
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.02em;
@@ -787,8 +786,8 @@ $accentColor: #ffcd64;
 .Works-Footer-CopyText {
   font-size: 1.2rem;
   line-height: 1.3333;
-  font-family: poppins;
-  font-weight: 500;
+  font-family: 'Josefin Sans';
+  font-weight: 300;
   font-style: normal;
   letter-spacing: 0.1em;
 
