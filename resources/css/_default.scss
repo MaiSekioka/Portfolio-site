@@ -3,9 +3,72 @@ html {
   font-size: 62.5%;
 }
 
+// JP 300 Light
+@font-face {
+  font-family:'Zen Maru Gothic';
+  src: url("/resources/font/ZenMaruGothic-Light.woff") format('woff');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+// JP 400 Regular
+@font-face {
+  font-family:'Zen Maru Gothic';
+  src: url("/resources/font/ZenMaruGothic-Regular.woff") format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+// JP 500 Medium
+@font-face {
+  font-family:'Zen Maru Gothic';
+  src: url("/resources/font/ZenMaruGothic-Medium.woff") format('woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+// EN 300 Light
+@font-face {
+  font-family:'Josefin Sans';
+  src: url("/resources/font/JosefinSans-Light.woff") format('woff');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+// EN 400 Regular
+@font-face {
+  font-family:'Josefin Sans';
+  src: url("/resources/font/JosefinSans-Regular.woff") format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+// EN 600 Semibold
+@font-face {
+  font-family:'Josefin Sans';
+  src: url("/resources/font/JosefinSans-SemiBold.woff") format('woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+// NUM 400 Regular
+@font-face {
+  font-family:'Roboto Condensed';
+  src: url("/resources/font/RobotoCondensed-Regular.woff") format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 body {
   font-size: 1.6rem;
-  font-family: fot-tsukubrdgothic-std,'TsukuBRdGothic-Regular','ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN', sans-serif;
+  font-family: 'Zen Maru Gothic','ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN', serif;
   color: #333333;
   position: relative;
   overflow-x: hidden;

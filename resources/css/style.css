@@ -4,9 +4,58 @@ html {
   font-size: 62.5%;
 }
 
+@font-face {
+  font-family: "Zen Maru Gothic";
+  src: url("/resources/font/ZenMaruGothic-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Zen Maru Gothic";
+  src: url("/resources/font/ZenMaruGothic-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Zen Maru Gothic";
+  src: url("/resources/font/ZenMaruGothic-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/resources/font/JosefinSans-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/resources/font/JosefinSans-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/resources/font/JosefinSans-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("/resources/font/RobotoCondensed-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
 body {
   font-size: 1.6rem;
-  font-family: fot-tsukubrdgothic-std, "TsukuBRdGothic-Regular", "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", sans-serif;
+  font-family: "Zen Maru Gothic", "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", serif;
   color: #333333;
   position: relative;
   overflow-x: hidden;
@@ -296,8 +345,8 @@ a:link, a:visited, a:hover, a:active {
 .CatchCopy-En {
   font-size: 10rem;
   line-height: 1.2;
-  font-family: futura-pt, sans-serif;
-  font-weight: 500;
+  font-family: "Josefin Sans";
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0.02em;
   color: #1d293f;
@@ -335,7 +384,7 @@ a:link, a:visited, a:hover, a:active {
   bottom: 11vmax;
   font-size: 1.8rem;
   line-height: 1.5;
-  font-family: futura-pt, sans-serif;
+  font-family: "Josefin Sans";
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.05em;
@@ -1156,7 +1205,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .Ability-List-Term {
-  font-family: futura-pt, sans-serif;
+  font-family: "Josefin Sans";
   font-weight: 500;
   font-style: normal;
 }
@@ -1171,7 +1220,7 @@ a:link, a:visited, a:hover, a:active {
 
 .Ability-List-Description {
   margin-top: 6px;
-  font-family: futura-pt, sans-serif;
+  font-family: "Josefin Sans";
   font-weight: 400;
   font-style: normal;
 }
@@ -1381,8 +1430,8 @@ a:link, a:visited, a:hover, a:active {
   left: 0;
   font-size: 8rem;
   line-height: 1;
-  font-family: futura-pt, sans-serif;
-  font-weight: 500;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
   font-style: normal;
 }
 @media screen and (max-width: 767px) {
@@ -1433,7 +1482,6 @@ a:link, a:visited, a:hover, a:active {
 .Future-Card-Text {
   margin-top: 46px;
   line-height: 1.6875;
-  font-family: fot-tsukubrdgothic-std, sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.02em;
@@ -1584,7 +1632,7 @@ a:link, a:visited, a:hover, a:active {
   margin-left: 20px;
   font-size: 1.2rem;
   line-height: 1;
-  font-family: futura-pt, sans-serif;
+  font-family: "Josefin Sans";
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.1em;
@@ -1626,7 +1674,7 @@ a:link, a:visited, a:hover, a:active {
 .Profile-Copy-Text {
   font-size: 1.4rem;
   line-height: 1.2857;
-  font-family: futura-pt, sans-serif;
+  font-family: "Josefin Sans";
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.05em;

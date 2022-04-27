@@ -289,12 +289,11 @@ $accentColor: #ffcd64;
   }
 }
 
-
 .CatchCopy-En {
   font-size: 10rem;
   line-height: 1.2;
-  font-family: futura-pt, sans-serif;
-  font-weight: 500;
+  font-family: 'Josefin Sans';
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0.02em;
   color: $subBlue;
@@ -330,7 +329,7 @@ $accentColor: #ffcd64;
   bottom: 11vmax;
   font-size: 1.8rem;
   line-height: 1.5;
-  font-family: futura-pt, sans-serif;
+  font-family: 'Josefin Sans';
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.05em;
@@ -1112,7 +1111,7 @@ $accentColor: #ffcd64;
 }
 
 .Ability-List-Term {
-  font-family: futura-pt, sans-serif;
+  font-family: 'Josefin Sans';
   font-weight: 500;
   font-style: normal;
 
@@ -1127,7 +1126,7 @@ $accentColor: #ffcd64;
 
 .Ability-List-Description {
   margin-top: 6px;
-  font-family: futura-pt, sans-serif;
+  font-family: 'Josefin Sans';
   font-weight: 400;
   font-style: normal;
 
@@ -1327,8 +1326,8 @@ $accentColor: #ffcd64;
   left: 0;
   font-size: 8rem;
   line-height: 1;
-  font-family: futura-pt, sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
   font-style: normal;
 
   @include mediaQuery.mq {
@@ -1375,7 +1374,6 @@ $accentColor: #ffcd64;
 .Future-Card-Text {
   margin-top: 46px;
   line-height: 1.6875;
-  font-family: fot-tsukubrdgothic-std, sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.02em;
@@ -1516,7 +1514,7 @@ $accentColor: #ffcd64;
   margin-left: 20px;
   font-size: 1.2rem;
   line-height: 1;
-  font-family: futura-pt, sans-serif;
+  font-family: 'Josefin Sans';
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.1em;
@@ -1555,7 +1553,7 @@ $accentColor: #ffcd64;
 .Profile-Copy-Text {
   font-size: 1.4rem;
   line-height: 1.2857;
-  font-family: futura-pt, sans-serif;
+  font-family: 'Josefin Sans';
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.05em;
