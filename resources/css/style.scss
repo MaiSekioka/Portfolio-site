@@ -94,7 +94,7 @@ $accentColor: #ffcd64;
 
 .Header-Nav-List-Item {
   letter-spacing: 0.02em;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -290,15 +290,16 @@ $accentColor: #ffcd64;
 }
 
 .CatchCopy-En {
+  margin-left: -10px;
   font-size: 10rem;
   line-height: 1.2;
   font-family: 'Josefin Sans';
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
-  letter-spacing: 0.02em;
   color: $subBlue;
 
   @include mediaQuery.mq {
+    margin-left: -5px;
     font-size: 7.2rem;
     line-height: 1.1944;
     letter-spacing: 0.02em;
@@ -306,15 +307,13 @@ $accentColor: #ffcd64;
 }
 
 .CatchCopy-Jp {
-  margin-top: 12px;
   font-size: 1.8rem;
   line-height: 1.75;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0.1em;
 
   @include mediaQuery.mq {
-    margin-top: 20px;
     font-size: 1.4rem;
     line-height: 1.7857;
     letter-spacing: 0.02em;
@@ -330,7 +329,7 @@ $accentColor: #ffcd64;
   font-size: 1.8rem;
   line-height: 1.5;
   font-family: 'Josefin Sans';
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   letter-spacing: 0.05em;
   transform: scale(1);
@@ -430,7 +429,7 @@ $accentColor: #ffcd64;
   background-color: #fff;
   font-size: 3.2rem;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.02em;
 
@@ -575,7 +574,7 @@ $accentColor: #ffcd64;
 .Gallery-Card-Title {
   font-size: 2.2rem;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.02em;
 }
@@ -592,7 +591,7 @@ $accentColor: #ffcd64;
   display: inline-block;
   margin-top: 9px;
   line-height: 1.5;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.04em;
 }
@@ -716,7 +715,7 @@ $accentColor: #ffcd64;
   background-color: #fff;
   font-size: 3.2rem;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.02em;
 
@@ -949,7 +948,7 @@ $accentColor: #ffcd64;
 .Personality-Media-Title {
   font-size: 2.4rem;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.02em;
   white-space: nowrap;
@@ -966,6 +965,7 @@ $accentColor: #ffcd64;
   margin-top: 20px;
   line-height: 2.0625;
   letter-spacing: 0.02em;
+  font-weight: 400;
 
   @include mediaQuery.mq {
     font-size: 1.4rem;
@@ -1076,7 +1076,7 @@ $accentColor: #ffcd64;
 .Ability-Title {
   font-size: 2.4rem;
   line-height: 1.4583;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.05em;
 
@@ -1112,7 +1112,7 @@ $accentColor: #ffcd64;
 
 .Ability-List-Term {
   font-family: 'Josefin Sans';
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 
   .Ability-List-Description + & {
@@ -1127,7 +1127,7 @@ $accentColor: #ffcd64;
 .Ability-List-Description {
   margin-top: 6px;
   font-family: 'Josefin Sans';
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 
   @include mediaQuery.mq {
@@ -1213,7 +1213,7 @@ $accentColor: #ffcd64;
   background-color: #fff;
   font-size: 3.2rem;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.02em;
 
@@ -1337,8 +1337,8 @@ $accentColor: #ffcd64;
 
 .Future-Card-Title-Jp {
   position: absolute;
-  bottom: 6px;
-  right: 0;
+  bottom: 8px;
+  right: 6px;
   font-size: 1.8rem;
   line-height: 1.6666;
   font-weight: 700;
@@ -1351,12 +1351,8 @@ $accentColor: #ffcd64;
   }
 }
 
-.Future-Card + .Future-Card .Future-Card-Title-Jp {
-  margin-left: 10px;
-
-  @include mediaQuery.mq {
-    margin-left: 5px;
-  }
+.Future-Card + .Future-Card  .Future-Card-Title-Jp {
+  right: 0;
 }
 
 .Future-Card-Partition {
@@ -1473,7 +1469,7 @@ $accentColor: #ffcd64;
   display: flex;
   margin-left: 90px;
   margin-right: 90px;
-  width: 550px;
+  min-width: 550px;
 
   @include mediaQuery.mq {
     flex-direction: column;
@@ -1515,7 +1511,7 @@ $accentColor: #ffcd64;
   font-size: 1.2rem;
   line-height: 1;
   font-family: 'Josefin Sans';
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   letter-spacing: 0.1em;
 
@@ -1531,6 +1527,7 @@ $accentColor: #ffcd64;
   font-weight: 400;
   font-style: normal;
   line-height: 1.6875;
+  letter-spacing: 0.08em;
 
   @include mediaQuery.mq {
     margin-top: 24px;
@@ -1554,7 +1551,7 @@ $accentColor: #ffcd64;
   font-size: 1.4rem;
   line-height: 1.2857;
   font-family: 'Josefin Sans';
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   letter-spacing: 0.05em;
 
@@ -1857,6 +1854,7 @@ $accentColor: #ffcd64;
   display: flex;
   padding-left: 69px;
   width: 100%;
+  pointer-events: none;
 
   @include mediaQuery.mq(lmd) {
     top: 100px;
