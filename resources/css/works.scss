@@ -50,14 +50,19 @@ $accentColor: #ffcd64;
 
 .Introduce-Title {
   position: relative;
+  display: inline-block;
   font-size: 3.6rem;
   line-height: 1;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.05em;
 
+  @media screen and (max-width:1180px) {
+    padding-left: 80px;
+  }
+
   @include mediaQuery.mq {
-    padding-left: 137px;
+    padding-left: 100px;
     font-size: 2.8rem;
   }
 
@@ -78,10 +83,15 @@ $accentColor: #ffcd64;
       width: 132px;
     }
 
+    @media screen and (max-width:1180px) {
+      left: -40px;
+      width: 100px;
+      min-width: auto;
+    }
+
     @include mediaQuery.mq {
       left: 0;
-      width: 115px;
-      min-width: auto;
+      width: 80px;
     }
   }
 }
