@@ -1342,7 +1342,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .Future-Cards {
-  justify-content: space-between;
+  gap: 7.8125%;
   display: flex;
   width: 100%;
   margin-top: 60px;
@@ -1351,6 +1351,15 @@ a:link, a:visited, a:hover, a:active {
   .Future-Cards {
     flex-direction: column;
     row-gap: 50px;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Future-Cards {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -1367,7 +1376,9 @@ a:link, a:visited, a:hover, a:active {
 }
 @media screen and (max-width: 959px) {
   .Future-Card {
+    padding-bottom: 48px;
     width: 100%;
+    min-height: auto;
   }
 }
 @media screen and (max-width: 767px) {

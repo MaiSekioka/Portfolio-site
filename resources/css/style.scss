@@ -1249,7 +1249,7 @@ $accentColor: #ffcd64;
 }
 
 .Future-Cards {
-  justify-content: space-between;
+  gap: calc((100 / 1280) * 100%);
   display: flex;
   width: 100%;
   margin-top: 60px;
@@ -1257,6 +1257,14 @@ $accentColor: #ffcd64;
   @include mediaQuery.mq(lmd){
     flex-direction: column;
     row-gap: 50px;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include mediaQuery.mq {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -1272,7 +1280,9 @@ $accentColor: #ffcd64;
   background-color: #fff;
 
   @include mediaQuery.mq(lmd){
+    padding-bottom: 48px;
     width: 100%;
+    min-height: auto;
   }
 
   @include mediaQuery.mq {
