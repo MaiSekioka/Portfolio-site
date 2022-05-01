@@ -202,8 +202,8 @@ a:link, a:visited, a:hover, a:active {
     min-height: 100vh;
     background: url(../img/bg-nav-menu-bg-freeline.svg), url(../img/bg-nav-menu-bg-straight-line.svg), #1d293f;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: bottom 80% left 50%, top center, center;
-    background-size: cover, auto, cover;
+    background-position: center, top center, center;
+    background-size: 100% auto, auto, cover;
     transform: translateX(100%);
     transition: all 0.4s;
   }
@@ -238,6 +238,9 @@ a:link, a:visited, a:hover, a:active {
   transition: transform ease-in-out 0.3s;
 }
 
+.Header.is-drawerActive {
+  z-index: 10;
+}
 .Header.is-drawerActive .Header-Nav {
   position: absolute;
   z-index: 1;
@@ -248,7 +251,7 @@ a:link, a:visited, a:hover, a:active {
   margin-right: auto;
   visibility: visible;
   width: 200px;
-  padding-top: 158px;
+  padding-top: 18.2vh;
   transform: translateX(0);
   transition: transform 0.4s;
 }

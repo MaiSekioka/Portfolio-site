@@ -145,11 +145,11 @@ $accentColor: #ffcd64;
     no-repeat,
     no-repeat;
     background-position:
-    bottom 80% left 50%,
+    center,
     top center,
     center;
     background-size:
-    cover,
+    100% auto,
     auto,
     cover;
     transform: translateX(100%);
@@ -186,6 +186,7 @@ $accentColor: #ffcd64;
 }
 
 .Header.is-drawerActive {
+  z-index: 10;
 
   .Header-Nav {
     position: absolute;
@@ -197,7 +198,7 @@ $accentColor: #ffcd64;
     margin-right: auto;
     visibility: visible;
     width: 200px;
-    padding-top: 158px;
+    padding-top: 18.2vh;
     transform: translateX(0);
     transition: transform .4s;
   }
