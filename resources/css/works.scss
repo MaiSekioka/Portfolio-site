@@ -62,8 +62,9 @@ $accentColor: #ffcd64;
   }
 
   @include mediaQuery.mq {
-    padding-left: 100px;
+    padding-left: 30px;
     font-size: 2.8rem;
+    line-height: 1.25;
   }
 
   &::before {
@@ -91,7 +92,7 @@ $accentColor: #ffcd64;
 
     @include mediaQuery.mq {
       left: 0;
-      width: 80px;
+      width: 15px;
     }
   }
 }

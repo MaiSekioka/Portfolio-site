@@ -132,8 +132,9 @@ a:link, a:visited, a:hover, a:active {
 }
 @media screen and (max-width: 767px) {
   .Introduce-Title {
-    padding-left: 100px;
+    padding-left: 30px;
     font-size: 2.8rem;
+    line-height: 1.25;
   }
 }
 .Introduce-Title::before {
@@ -164,7 +165,7 @@ a:link, a:visited, a:hover, a:active {
 @media screen and (max-width: 767px) {
   .Introduce-Title::before {
     left: 0;
-    width: 80px;
+    width: 15px;
   }
 }
 
