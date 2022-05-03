@@ -45,11 +45,11 @@
               </li>
               <li class="Introduce-Media-Summary">
                 <span class="Introduce-Media-Summary-Badge">学び</span>
-                <span class="Introduce-Media-Summary-Text">技術選定と堅牢な設計が、質の良いサイトを作る</span>
+                <span class="Introduce-Media-Summary-Text">技術選定と堅牢な設計の大切さ</span>
               </li>
             </ul>
             <p class="Introduce-Media-Overview-Text">
-              旅館サイトの予約カレンダーを、ライブラリを使用して実装。ファーストビューのスライドアニメーションはCSSのみで表現した。また、CSS設計にはMindBEMdingの思想を取り入れてみた。「表示速度の向上、コンバージョンに繋がるサイトの品質」、「サイト公開以降の変更に強いコードの書き方」について、実践を元にじっくり考える機会となった。
+              架空の温泉旅館サイトのコーディングを行いました。旅館サイトの予約カレンダーは、ライブラリを使用して実装し、ファーストビューのスライドアニメーションはCSSのみで表現しています。また、CSS設計にはBEMの考え方を取り入れてみました。サイトの仕様と実装したい機能に対して、どんなライブラリを使用するか(あるいは使用しないか)を検討し、CSSに命名規則を持たせて管理することが、サイトの質を向上させると実感する良い機会となりました。
             </p>
             <p class="Introduce-Media-Time-Text">
               制作時間：40時間
@@ -92,14 +92,14 @@
           <div class="Description-Media">
             <div class="Description-Media__Inner">
               <div class="Description-Text-Box">
-                <p class="Description-Text-Box-Title">ライブラリを使う、使わないの判断</p>
+                <p class="Description-Text-Box-Title">ライブラリの使用/不使用の検討</p>
                 <p class="Description-Text-Box-Text">
-                  このサイト構築にあたって、ライブラリとしてjQuery,AOS.js,flatpickrを使用し、ファーストビューにスライダー系のライブラリは使用しなかった。ライブラリは便利なものであるが、使いすぎると読み込み速度に関わる。ライブラリを使うか自身で書くか、使うならどのライブラリを使うのかなど、仕様に適した選定ができるよう、日々情報を集め、引き出しとして持っておくことが、サイトの品質を高め、ひいてはWebサイトのコンバージョン拡大に繋がっていくと感じた。
+                  このサイトは仕様として、jQuery,AOS.js,flatpickrを使用し、ファーストビューにスライダー系のライブラリは使用しないよう指定がありました。スライダー・タブ切り替えなどの機能は、自分でJavaScriptを書いて実装する方がサイトへの負荷が少なくて済みますが、納期や工数の関係で全てを手作業では行えない場合が多いと思います。仕様に適した選定ができるよう、日々便利なライブラリやツールの情報を集めると同時に、よくある機能については自分で実装できるようにしておきたいと感じました。現在はまだ技術が足りないものの、ゆくゆくはjQueryに依存せずJavaScriptのみで書けるように、日々学習を進めています。
                 </p>
               </div>
               <figure class="Description-Image-Box">
                 <img src="../resources/img/gallery/ishiikadan-media01.svg" alt="ページローディングの図" class="Description-Img">
-                <figcaption class="Description-Caption">ページスピードは、ユーザーの購買・行動の欲求に直接作用する。見せるものを選び最適な閲覧環境を整える。</figcaption>
+                <figcaption class="Description-Caption">快適な閲覧環境のため、ライブラリに依存しすぎないことが大切</figcaption>
               </figure>
             </div>
           </div>
@@ -107,13 +107,13 @@
           <div class="Description-Media">
             <div class="Description-Media__Inner">
               <div class="Description-Text-Box">
-                <p class="Description-Text-Box-Title">BEMを通してCSS設計を学ぶ</p>
+                <p class="Description-Text-Box-Title">CSS設計に触れる</p>
                 <p class="Description-Text-Box-Text">
-                  コードやクラスの命名に規則性を持たせたいと考え、MindBEMdingの思想を設計に取り入れてみた。まずはブロックとエレメント、必要に応じてモディファイア、という基本構造の作り方で触れてみることに。少し導入してみるだけでも「要素の親子関係がはっきりする」「変更点だけを分離でき、後からの変更に強くなる」などの恩恵を受けられた。さまざまなCSSの設計手法があるが、まずはBEMに基づく書き方をしっかりと吸収・実践してみて、ゆくゆくはプロジェクトに合わせて設計手法を選んだり、組み合わせることにも挑戦したい。</p>
+                  コードやクラスの命名に規則性を持たせたいと考え、BEMの思想を設計に取り入れてみました。まずはブロックとエレメント、必要に応じてモディファイア、という基本構造の作り方で触れてみることに。少し導入してみるだけでも「要素の親子関係がはっきりする」「変更点だけを分離でき、後からの変更に強くなる」などの恩恵を受けられました。さまざまなCSS設計の手法がありますが、まずはBEMに基づく書き方をしっかりと吸収・実践してみて、今後プロジェクトに合わせて設計手法を選んだり、組み合わせることにも挑戦したいと思います。</p>
               </div>
               <figure class="Description-Image-Box">
                 <img src="../resources/img/gallery/ishiikadan-media02.png" alt="ブロック、エレメント、モディファイア" class="Description-Img">
-                <figcaption class="Description-Caption">MindBEMdingの考え方は、初めに触れる設計手法として最適だったと感じている。</figcaption>
+                <figcaption class="Description-Caption">BEMの考え方は汎用的で、初めて触れる設計思想として分かりやすかった</figcaption>
               </figure>
             </div>
           </div>
