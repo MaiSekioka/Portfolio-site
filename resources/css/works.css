@@ -732,6 +732,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .Description-Text-Box-Title {
+  margin-top: -10px;
   font-size: 3.2rem;
   line-height: 1.6;
   font-weight: 500;
@@ -746,7 +747,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .Description-Text-Box-Text {
-  margin-top: 32px;
+  margin-top: 28px;
   line-height: 2;
   font-weight: 400;
   font-style: normal;
