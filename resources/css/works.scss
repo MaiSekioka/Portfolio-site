@@ -11,32 +11,31 @@ $accentColor: #ffcd64;
 
 .Works {
   overflow: hidden;
-  background: url(../img/bg-grid.svg), rgba($color: $baseColor, $alpha: 1);
+  background: url(../img/bg-grid.svg), rgba($color: $baseColor, $alpha: 100%);
 
   @include mediaQuery.mq {
-    background: url(../img/bg-grid-sm.svg), rgba($color: $baseColor, $alpha: 1);
+    background: url(../img/bg-grid-sm.svg), rgba($color: $baseColor, $alpha: 100%);
   }
 }
-
 
 .Introduce {
   position: relative;
   z-index: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
   width: 100%;
   min-height: 850px;
   padding-top: 60px;
-  padding-left: 40px;
   padding-right: 40px;
+  padding-left: 40px;
 
   @include mediaQuery.mq {
     min-height: auto;
     padding-top: 62px;
+    padding-right: 0;
     padding-bottom: 80px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
   }
 
   &__Inner {
@@ -52,12 +51,12 @@ $accentColor: #ffcd64;
   position: relative;
   display: inline-block;
   font-size: 3.6rem;
-  line-height: 1;
-  font-weight: 500;
   font-style: normal;
-  letter-spacing: 0.05em;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: .05em;
 
-  @media screen and (max-width:1180px) {
+  @media screen and (max-width: 1180px) {
     padding-left: 80px;
   }
 
@@ -68,23 +67,23 @@ $accentColor: #ffcd64;
   }
 
   &::before {
-    content: '';
     position: absolute;
-    left: calc((((100vw - 100%) / 2) + 40px) * -1);
     top: 50%;
+    left: calc((((100vw - 100%) / 2) + 40px) * -1);
     display: block;
-    transform: translateY(-50%);
     width: calc((100vw - 100%) / 2);
     min-width: 132px;
     height: 3px;
     background-color: $textColor;
+    content: '';
+    transform: translateY(-50%);
 
-    @include mediaQuery.mq(lg){
+    @include mediaQuery.mq(lg) {
       left: -172px;
       width: 132px;
     }
 
-    @media screen and (max-width:1180px) {
+    @media screen and (max-width: 1180px) {
       left: -40px;
       width: 100px;
       min-width: auto;
@@ -98,10 +97,10 @@ $accentColor: #ffcd64;
 }
 
 .Introduce-Media {
-  align-items: flex-start;
-  gap: 36px;
-  justify-content: space-between;
   display: flex;
+  gap: 36px;
+  align-items: flex-start;
+  justify-content: space-between;
   margin-top: 30px;
 
   @include mediaQuery.mq {
@@ -109,21 +108,20 @@ $accentColor: #ffcd64;
     gap: 48px;
     margin-top: 32px;
     width: 100%;
-    padding-left: 15px;
     padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
 .Introduce-Media-Link-Area {
-  min-width: (590 / 1100 * 100%);
   flex: 1;
+  min-width: (590 / 1100 * 100%);
 
   @include mediaQuery.mq {
     width: 100%;
     min-width: auto;
   }
 }
-
 
 .Introduce-Image {
   display: block;
@@ -139,14 +137,14 @@ $accentColor: #ffcd64;
 }
 
 .Introduce-LinkBtn-Box {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  display: flex;
   margin-top: 30px;
   font-size: 1.8rem;
-  font-weight: 500;
   font-style: normal;
-  letter-spacing: 0.05em;
+  font-weight: 500;
+  letter-spacing: .05em;
 
   @include mediaQuery.mq {
     gap: 20px;
@@ -157,15 +155,15 @@ $accentColor: #ffcd64;
 
 .Introduce-LinkBtn-WebSite {
   position: relative;
-  overflow: hidden;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
-  border: 1px solid #000;
-  border-radius: 6px;
+  overflow: hidden;
   width: (275 / 590 * 100%);
   height: 60px;
-  background-color: #fff;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 6px;
   cursor: pointer;
 
   @include mediaQuery.mq {
@@ -174,42 +172,42 @@ $accentColor: #ffcd64;
     height: 48px;
   }
 
-  &:after {
-    content: '';
+  &::after {
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
     background-color: $subBlue;
-    transform-origin: center;
-    transform: scale(0,1);
+    content: '';
     transition: all ease-in .2s;
+    transform: scale(0, 1);
+    transform-origin: center;
   }
 
   &:hover {
     border: 1px solid $subBlue;
-    color: #fff;
+    color: #ffffff;
     transition: all .3s;
 
-    &:after {
+    &::after {
       opacity: 1;
-      transform: scale(1,1);
       transition: all ease-in .2s;
+      transform: scale(1, 1);
     }
   }
 }
 
 .Introduce-LinkBtn-GitHub {
   position: relative;
-  overflow: hidden;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
-  border: 1px solid #000;
-  border-radius: 6px;
+  overflow: hidden;
   width: (275 / 590 * 100%);
   height: 60px;
-  background-color: #fff;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 6px;
   cursor: pointer;
 
   @include mediaQuery.mq {
@@ -218,28 +216,28 @@ $accentColor: #ffcd64;
     height: 48px;
   }
 
-  &:after {
-    content: '';
+  &::after {
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
     background-color: $subBlue;
-    transform-origin: center;
-    transform: scale(0,1);
-    opacity: 0.5;
+    opacity: .5;
+    content: '';
     transition: all ease-in .2s;
+    transform: scale(0, 1);
+    transform-origin: center;
   }
 
   &:hover {
     border: 1px solid $subBlue;
-    color: #fff;
+    color: #ffffff;
     transition: all .3s;
 
-    &:after {
+    &::after {
       opacity: 1;
-      transform: scale(1,1);
       transition: all ease-in .2s;
+      transform: scale(1, 1);
     }
   }
 }
@@ -250,14 +248,14 @@ $accentColor: #ffcd64;
 }
 
 .Introduce-LoginInformation {
-  align-items: center;
   display: flex;
+  align-items: center;
   margin-top: 12px;
-  line-height: 1;
   font-family: 'Roboto Condensed';
-  font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.05em;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: .05em;
 
   @include mediaQuery.mq {
     display: block;
@@ -265,8 +263,8 @@ $accentColor: #ffcd64;
 }
 
 .Introduce-LoginInformation-Item {
-  align-items: center;
   display: flex;
+  align-items: center;
 
   @include mediaQuery.mq {
     margin-left: 17px;
@@ -283,13 +281,13 @@ $accentColor: #ffcd64;
 }
 
 .Introduce-LoginInformation-Badge {
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
-  border-radius: 14px;
   width: 64px;
   height: 24px;
-  background-color: #fff;
+  background-color: #ffffff;
+  border-radius: 14px;
   font-size: 1.4rem;
 
   @include mediaQuery.mq {
@@ -317,10 +315,10 @@ $accentColor: #ffcd64;
 
 .Introduce-Media-Summary {
   display: flex;
-  line-height: 1;
-  font-weight: 700;
   font-style: normal;
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .05em;
   word-break: break-all;
 
   @include mediaQuery.mq {
@@ -337,21 +335,21 @@ $accentColor: #ffcd64;
 }
 
 .Introduce-Media-Summary-Badge {
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
-  border-radius: 14px;
   min-width: 64px;
   height: 24px;
   background-color: $subBlue;
+  border-radius: 14px;
   font-size: 1.4rem;
-  font-weight: 400;
   font-style: normal;
-  color: #fff;
+  font-weight: 400;
+  color: #ffffff;
 
   @include mediaQuery.mq {
-    min-width: auto;
     width: 64px;
+    min-width: auto;
   }
 }
 
@@ -360,8 +358,8 @@ $accentColor: #ffcd64;
   margin-top: -5px;
   margin-left: 12px;
   font-size: 2rem;
-  font-weight: 500;
   font-style: normal;
+  font-weight: 500;
   line-height: 1.5;
   word-break: break-all;
 
@@ -374,10 +372,10 @@ $accentColor: #ffcd64;
 
 .Introduce-Media-Overview-Text {
   margin-top: 40px;
-  line-height: 2;
-  font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.04em;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: .04em;
 
   @include mediaQuery.mq {
     margin-top: 42px;
@@ -388,9 +386,9 @@ $accentColor: #ffcd64;
 .Introduce-Media-Time-Text {
   margin-top: 36px;
   font-size: 1.8rem;
-  font-weight: 500;
   font-style: normal;
-  letter-spacing: 0.05em;
+  font-weight: 500;
+  letter-spacing: .05em;
   word-break: break-all;
 
   @include mediaQuery.mq {
@@ -403,10 +401,10 @@ $accentColor: #ffcd64;
 .Introduce-Media-Technique-Text {
   margin-top: 16px;
   font-size: 1.8rem;
-  line-height: 1.75;
-  font-weight: 500;
   font-style: normal;
-  letter-spacing: 0.05em;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: .05em;
   word-break: break-all;
 
   @include mediaQuery.mq {
@@ -417,9 +415,9 @@ $accentColor: #ffcd64;
 }
 
 .More {
+  display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  display: flex;
   margin-top: 24px;
   width: 100%;
   height: 125px;
@@ -431,8 +429,8 @@ $accentColor: #ffcd64;
   @include mediaQuery.mq {
     position: absolute;
     z-index: 1;
-    bottom: -80px;
     right: 0;
+    bottom: -80px;
     left: 0;
     justify-content: center;
     height: 120px;
@@ -445,9 +443,9 @@ $accentColor: #ffcd64;
   margin-top: 6px;
   margin-right: 36px;
   font-family: 'Josefin Sans';
-  line-height: 1;
-  font-weight: 600;
   font-style: normal;
+  font-weight: 600;
+  line-height: 1;
   transition: all .3s;
 
   @include mediaQuery.mq(lmd) {
@@ -459,8 +457,8 @@ $accentColor: #ffcd64;
   }
 
   &:hover {
-    transform: scale(1.05);
     transition: all .3s;
+    transform: scale(1.05);
   }
 }
 
@@ -501,7 +499,7 @@ $accentColor: #ffcd64;
   background-repeat: no-repeat;
   background-size: contain;
 
-  @include mediaQuery.mq(xl){
+  @include mediaQuery.mq(xl) {
     left: calc(50% - 874px - 210px);
     padding-top: 505px;
   }
@@ -534,8 +532,8 @@ $accentColor: #ffcd64;
   @include mediaQuery.mq {
     position: absolute;
     z-index: -1;
-    bottom: 60px;
     right: -92px;
+    bottom: 60px;
     display: block;
     width: 350px;
     height: 202px;
@@ -548,20 +546,20 @@ $accentColor: #ffcd64;
 .Description {
   position: relative;
   z-index: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
   width: 100%;
   padding-top: 80px;
+  padding-right: 40px;
   padding-bottom: 150px;
   padding-left: 40px;
-  padding-right: 40px;
 
   @include mediaQuery.mq {
     padding-top: 140px;
+    padding-right: 0;
     padding-bottom: 100px;
     padding-left: 0;
-    padding-right: 0;
   }
 
   &__Inner {
@@ -569,29 +567,27 @@ $accentColor: #ffcd64;
   }
 }
 
-
 .Description-Media {
   position: relative;
   width: 100%;
 
   &::before {
-    content: '';
     position: absolute;
-    right: 24.9%;
     top: -40px;
+    right: 24.9%;
     display: block;
     width: 3px;
     height: 40px;
     background-color: $textColor;
+    content: '';
 
     @include mediaQuery.mq {
       display: none;
     }
   }
-  
+
   &::after {
     @include mediaQuery.mq {
-      content: '';
       position: absolute;
       z-index: -1;
       top: -35px;
@@ -603,9 +599,9 @@ $accentColor: #ffcd64;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
+      content: '';
     }
   }
-
 
   & + & {
     margin-top: 100px;
@@ -616,22 +612,22 @@ $accentColor: #ffcd64;
   }
 
   & + &::after {
-    left: auto;
     right: -100px;
+    left: auto;
   }
 
   &__Inner {
+    display: flex;
+    gap: (54 / 1100 * 100%);
     align-items: flex-start;
     justify-content: space-between;
-    gap: (54 / 1100 * 100%);
-    display: flex;
     width: 100%;
 
     @include mediaQuery.mq {
       flex-direction: column;
       gap: 40px;
-      padding-left: 15px;
       padding-right: 15px;
+      padding-left: 15px;
     }
   }
 }
@@ -647,10 +643,10 @@ $accentColor: #ffcd64;
 .Description-Text-Box-Title {
   margin-top: -10px;
   font-size: 3.2rem;
-  line-height: 1.6;
-  font-weight: 500;
   font-style: normal;
-  letter-spacing: 0.05em;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: .05em;
 
   @include mediaQuery.mq {
     font-size: 2.4rem;
@@ -660,10 +656,10 @@ $accentColor: #ffcd64;
 
 .Description-Text-Box-Text {
   margin-top: 28px;
-  line-height: 2;
-  font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: .02em;
   word-break: break-all;
 
   @include mediaQuery.mq {
@@ -681,35 +677,33 @@ $accentColor: #ffcd64;
   }
 
   &::before {
-      @include mediaQuery.mq {
-      content: '';
+    @include mediaQuery.mq {
       position: absolute;
       top: -20px;
       right: 50%;
       display: block;
       width: 3px;
       height: 20px;
-      transform: translateX(-50%);
       background-color: $textColor;
+      content: '';
+      transform: translateX(-50%);
     }
   }
 }
 
-
-
 .Description-Caption {
   margin-top: 5px;
   font-size: 1.4rem;
-  line-height: 1.5;
-  font-weight: 500;
   font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .Description-Bg-Diamond-BottomRight {
   position: absolute;
   z-index: -1;
-  bottom: -230px;
   right: -31.3%;
+  bottom: -230px;
   width: 76%;
   padding-top: 632px;
   background-image: url(../img/bg-diamond.svg);
@@ -728,7 +722,6 @@ $accentColor: #ffcd64;
 }
 
 .Description-SP-Bg-Diamond-BottomLeft {
-
   @include mediaQuery.mq {
     position: absolute;
     z-index: -1;
@@ -744,31 +737,31 @@ $accentColor: #ffcd64;
 }
 
 .Works-Footer {
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  padding-left: 40px;
-  padding-right: 40px;
   width: 100%;
   height: 80px;
+  padding-top: 28px;
+  padding-right: 40px;
+  padding-bottom: 28px;
+  padding-left: 40px;
   background-color: $subBlue;
-  color: #fff;
+  color: #ffffff;
 
   @include mediaQuery.mq {
+    height: 120px;
     padding-top: 20px;
+    padding-right: 15px;
     padding-bottom: 20px;
     padding-left: 15px;
-    padding-right: 15px;
-    height: 120px;
     text-align: center;
   }
 
   &__Inner {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    display: flex;
     width: 1280px;
 
     @include mediaQuery.mq {
@@ -780,13 +773,13 @@ $accentColor: #ffcd64;
 
 .Works-Footer-Back-Link {
   position: relative;
-  font-size: 1.8rem;
-  line-height: 1;
   font-family: 'Josefin Sans';
-  font-weight: 500;
+  font-size: 1.8rem;
   font-style: normal;
-  letter-spacing: 0.02em;
-  color: #fff !important;
+  font-weight: 500;
+  line-height: 1;
+  color: #ffffff !important;
+  letter-spacing: .02em;
   transition: opacity .3s;
 
   &:hover {
@@ -796,24 +789,25 @@ $accentColor: #ffcd64;
 }
 
 .Works-Footer-CopyText {
-  font-size: 1.2rem;
-  line-height: 1.3333;
   font-family: 'Josefin Sans';
-  font-weight: 300;
+  font-size: 1.2rem;
   font-style: normal;
-  letter-spacing: 0.1em;
+  font-weight: 300;
+  line-height: 1.3333;
+  letter-spacing: .1em;
 
   @include mediaQuery.mq {
     margin-top: 41px;
   }
 }
 
-.st2{
+.st2 {
   fill: none;
 }
 
 @keyframes drawLine {
-  100%{
+
+  100% {
     stroke-dashoffset: 0;
   }
 }
@@ -824,22 +818,24 @@ $accentColor: #ffcd64;
   fill-opacity: 0;
   stroke-dasharray: 300;
   stroke-dashoffset: 301;
-  animation: drawLine .1s linear forwards;
   transition: fill-opacity .1s;
+  animation: drawLine .1s linear forwards;
 }
 
-#More-Footprint01.done .st2{
+#More-Footprint01.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
   transition: fill-opacity .2s;
 }
-#More-Footprint02.done .st2{
+
+#More-Footprint02.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
   transition: fill-opacity .2s;
   transition-delay: .3s;
 }
-#More-Footprint03.done .st2{
+
+#More-Footprint03.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
   transition: fill-opacity .2s;

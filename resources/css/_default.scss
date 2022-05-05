@@ -5,64 +5,64 @@ html {
 
 // JP 400 Regular
 @font-face {
-  font-family:'Zen Maru Gothic';
-  src: url("/resources/font/ZenMaruGothic-Regular.woff") format('woff');
+  font-family: 'Zen Maru Gothic';
   font-style: normal;
   font-weight: 400;
+  src: url('/resources/font/ZenMaruGothic-Regular.woff') format('woff');
   font-display: swap;
 }
 
 // JP 500 Medium
 @font-face {
-  font-family:'Zen Maru Gothic';
-  src: url("/resources/font/ZenMaruGothic-Medium.woff") format('woff');
+  font-family: 'Zen Maru Gothic';
   font-style: normal;
   font-weight: 500;
+  src: url('/resources/font/ZenMaruGothic-Medium.woff') format('woff');
   font-display: swap;
 }
 
 // EN 300 Light
 @font-face {
-  font-family:'Josefin Sans';
-  src: url("/resources/font/JosefinSans-Light.woff") format('woff');
+  font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 300;
+  src: url('/resources/font/JosefinSans-Light.woff') format('woff');
   font-display: swap;
 }
 
 // EN 400 Regular
 @font-face {
-  font-family:'Josefin Sans';
-  src: url("/resources/font/JosefinSans-Regular.woff") format('woff');
+  font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 400;
+  src: url('/resources/font/JosefinSans-Regular.woff') format('woff');
   font-display: swap;
 }
 
 // EN 600 Semibold
 @font-face {
-  font-family:'Josefin Sans';
-  src: url("/resources/font/JosefinSans-SemiBold.woff") format('woff');
+  font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 600;
+  src: url('/resources/font/JosefinSans-SemiBold.woff') format('woff');
   font-display: swap;
 }
 
 // NUM 400 Regular
 @font-face {
-  font-family:'Roboto Condensed';
-  src: url("/resources/font/RobotoCondensed-Regular.woff") format('woff');
+  font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
+  src: url('/resources/font/RobotoCondensed-Regular.woff') format('woff');
   font-display: swap;
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: 'Zen Maru Gothic','ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN', serif;
-  color: #333333;
   position: relative;
   overflow-x: hidden;
+  font-family: 'Zen Maru Gothic', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', serif;
+  font-size: 1.6rem;
+  color: #333333;
 }
 
 body * {
@@ -78,11 +78,14 @@ li {
   list-style: none;
 }
 
-a{
+a {
   display: block;
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
   color: #333333;
   text-decoration: none;
 }
