@@ -487,7 +487,7 @@ $accentColor: #ffcd64;
   }
 }
 
-.Introduce-Bg-Diamond-BottomLeft {
+.Introduce-Bg-Diamond__BottomLeft {
   position: absolute;
   z-index: -1;
   bottom: -91px;
@@ -509,7 +509,7 @@ $accentColor: #ffcd64;
   }
 }
 
-.Introduce-SP-Bg-Diamond-MiddleLeft {
+.Introduce-SP-Bg-Diamond__MiddleLeft {
   display: none;
 
   @include mediaQuery.mq {
@@ -526,7 +526,7 @@ $accentColor: #ffcd64;
   }
 }
 
-.Introduce-SP-Bg-Diamond-BottomRight {
+.Introduce-SP-Bg-Diamond__BottomRight {
   display: none;
 
   @include mediaQuery.mq {
@@ -699,7 +699,7 @@ $accentColor: #ffcd64;
   line-height: 1.5;
 }
 
-.Description-Bg-Diamond-BottomRight {
+.Description-Bg-Diamond__BottomRight {
   position: absolute;
   z-index: -1;
   right: -31.3%;
@@ -721,7 +721,7 @@ $accentColor: #ffcd64;
   }
 }
 
-.Description-SP-Bg-Diamond-BottomLeft {
+.Description-SP-Bg-Diamond__BottomLeft {
   @include mediaQuery.mq {
     position: absolute;
     z-index: -1;
