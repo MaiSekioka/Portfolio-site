@@ -1,62 +1,55 @@
 @charset "UTF-8";
-
 html {
   overflow-x: hidden;
   font-size: 62.5%;
 }
 
 @font-face {
-  font-family: 'Zen Maru Gothic';
+  font-family: "Zen Maru Gothic";
   font-style: normal;
   font-weight: 400;
-  src: url('/resources/font/ZenMaruGothic-Regular.woff') format('woff');
+  src: url("/resources/font/ZenMaruGothic-Regular.woff") format("woff");
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Zen Maru Gothic';
+  font-family: "Zen Maru Gothic";
   font-style: normal;
   font-weight: 500;
-  src: url('/resources/font/ZenMaruGothic-Medium.woff') format('woff');
+  src: url("/resources/font/ZenMaruGothic-Medium.woff") format("woff");
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 300;
-  src: url('/resources/font/JosefinSans-Light.woff') format('woff');
+  src: url("/resources/font/JosefinSans-Light.woff") format("woff");
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 400;
-  src: url('/resources/font/JosefinSans-Regular.woff') format('woff');
+  src: url("/resources/font/JosefinSans-Regular.woff") format("woff");
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 600;
-  src: url('/resources/font/JosefinSans-SemiBold.woff') format('woff');
+  src: url("/resources/font/JosefinSans-SemiBold.woff") format("woff");
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
-  src: url('/resources/font/RobotoCondensed-Regular.woff') format('woff');
+  src: url("/resources/font/RobotoCondensed-Regular.woff") format("woff");
   font-display: swap;
 }
-
 body {
   position: relative;
   overflow-x: hidden;
-  font-family: 'Zen Maru Gothic', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', serif;
+  font-family: "Zen Maru Gothic", "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", serif;
   font-size: 1.6rem;
   color: #333333;
 }
@@ -89,16 +82,13 @@ a:active {
 .sp-br {
   display: none;
 }
-
 @media screen and (max-width: 767px) {
-
   .sp-br {
     display: block;
   }
 }
 
 @media screen and (max-width: 767px) {
-
   .sp-nobr {
     display: none;
   }
@@ -108,9 +98,7 @@ a:active {
   display: inline-block;
   background: linear-gradient(to bottom, transparent 16px, #ffcd64 8px);
 }
-
 @media screen and (max-width: 767px) {
-
   .Yellow-Marker {
     background: linear-gradient(to bottom, transparent 0, transparent 19px, #ffcd64 19px, #ffcd64 26px, transparent 26px);
   }
@@ -132,16 +120,13 @@ a:active {
   width: 100%;
   height: 80px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Header {
     height: 60px;
     padding-right: 15px;
     padding-left: 15px;
   }
 }
-
 .Header__Inner {
   position: relative;
   display: flex;
@@ -157,21 +142,18 @@ a:active {
 .Header.is-fixed {
   position: fixed;
   height: 72px;
-  background-color: rgb(255 255 255 / 70%);
+  background-color: rgba(255, 255, 255, 0.7);
 }
-
 @media screen and (max-width: 767px) {
-
   .Header.is-fixed {
     height: 60px;
   }
 }
 
 @media screen and (max-width: 767px) {
-
   .Header-Nav {
     visibility: hidden;
-    transition: all .4s;
+    transition: all 0.4s;
     transform: translateX(150%);
   }
 }
@@ -185,14 +167,13 @@ a:active {
 .Header-Nav-List-Item {
   font-style: normal;
   font-weight: 500;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
 }
 
 .Header-Nav-List-Link {
   position: relative;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
-
 .Header-Nav-List-Link::after {
   position: absolute;
   right: 0;
@@ -201,18 +182,16 @@ a:active {
   width: 100%;
   height: 2px;
   background-color: #ffcd64;
-  content: '';
-  transition: transform .3s;
+  content: "";
+  transition: transform 0.3s;
   transform: scale(0, 1);
   transform-origin: center top;
 }
-
 .Header-Nav-List-Link:hover::after {
   transform: scale(1, 1);
 }
 
 @media screen and (max-width: 767px) {
-
   .Nav-Menu-Bg {
     position: absolute;
     z-index: 3;
@@ -228,7 +207,7 @@ a:active {
     background-position: center, top center, center;
     background-size: 100% auto, auto, cover;
     visibility: hidden;
-    transition: all .4s;
+    transition: all 0.4s;
     transform: translateX(100%);
   }
 }
@@ -236,9 +215,7 @@ a:active {
 .Burger-Btn {
   display: none;
 }
-
 @media screen and (max-width: 767px) {
-
   .Burger-Btn {
     position: absolute;
     z-index: 1;
@@ -261,13 +238,12 @@ a:active {
   height: 2px;
   background-color: #333333;
   border-radius: 1px;
-  transition: transform ease-in-out .3s;
+  transition: transform ease-in-out 0.3s;
 }
 
 .Header.is-drawerActive {
   z-index: 10;
 }
-
 .Header.is-drawerActive .Header-Nav {
   position: absolute;
   z-index: 1;
@@ -279,50 +255,42 @@ a:active {
   width: 200px;
   padding-top: 18.2vh;
   visibility: visible;
-  transition: transform .4s;
+  transition: transform 0.4s;
   transform: translateX(0);
 }
-
 .Header.is-drawerActive .Header-Nav-List {
   flex-direction: column;
   gap: 50px;
 }
-
 .Header.is-drawerActive .Header-Nav-List-Link {
   color: #ffffff;
 }
-
 .Header.is-drawerActive .Burger-Btn {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-
 .Header.is-drawerActive .Nav-Menu-Bg {
   cursor: pointer;
   visibility: visible;
-  transition: all .4s;
+  transition: all 0.4s;
   transform: translateX(0);
 }
-
 .Header.is-drawerActive .Burger-Btn-Bar {
   background-color: #ffffff;
 }
-
 .Header.is-drawerActive .Burger-Btn-Bar:nth-child(1) {
   width: 27px;
-  transition: transform ease-in-out .4s;
+  transition: transform ease-in-out 0.4s;
   transform: translateX(-2px) rotate(-30deg);
   transform-origin: top right;
 }
-
 .Header.is-drawerActive .Burger-Btn-Bar:nth-child(2) {
   opacity: 0;
-  transition: opacity .4s;
+  transition: opacity 0.4s;
 }
-
 .Header.is-drawerActive .Burger-Btn-Bar:nth-child(3) {
   width: 27px;
-  transition: transform ease-in-out .4s;
+  transition: transform ease-in-out 0.4s;
   transform: translateX(-1px) rotate(30deg);
   transform-origin: top right;
 }
@@ -331,9 +299,7 @@ a:active {
   overflow: hidden;
   background: url(../img/bg-grid.svg), #f4f4f4;
 }
-
 @media screen and (max-width: 767px) {
-
   .Main {
     background: url(../img/bg-grid-sm.svg), #f4f4f4;
   }
@@ -347,9 +313,7 @@ a:active {
   padding-right: 40px;
   padding-left: 40px;
 }
-
 @media screen and (max-width: 767px) {
-
   .MainVisual {
     min-height: 811px;
     padding-right: 15px;
@@ -360,7 +324,6 @@ a:active {
     background-size: 100% auto;
   }
 }
-
 .MainVisual__Inner {
   position: relative;
   width: 100%;
@@ -371,9 +334,7 @@ a:active {
   background-position: center bottom 36px;
   background-size: 100% auto;
 }
-
 @media screen and (max-width: 767px) {
-
   .MainVisual__Inner {
     padding-top: 100px;
     background: none;
@@ -382,21 +343,19 @@ a:active {
 
 .CatchCopy-En {
   margin-left: -10px;
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-size: 10rem;
   font-style: normal;
   font-weight: 600;
   line-height: 1.2;
   color: #1d293f;
 }
-
 @media screen and (max-width: 767px) {
-
   .CatchCopy-En {
     margin-left: -5px;
     font-size: 7.2rem;
     line-height: 1.1944;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -405,15 +364,13 @@ a:active {
   font-style: normal;
   font-weight: 400;
   line-height: 1.75;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
-
 @media screen and (max-width: 767px) {
-
   .CatchCopy-Jp {
     font-size: 1.4rem;
     line-height: 1.7857;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
     white-space: nowrap;
   }
 }
@@ -423,27 +380,23 @@ a:active {
   bottom: 11vmax;
   left: 19.375%;
   display: block;
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
   line-height: 1.5;
-  letter-spacing: .05em;
-  transition: all .3s;
+  letter-spacing: 0.05em;
+  transition: all 0.3s;
   transform: scale(1);
-  animation: floatScrollText ease 2s infinite;
-  animation: floatScrollText ease 2s infinite;
+  -webkit-animation: floatScrollText ease 2s infinite;
+          animation: floatScrollText ease 2s infinite;
 }
-
 @media screen and (min-width: 1440px) {
-
   .MainVisual-Scroll-Btn {
     bottom: 162px;
   }
 }
-
 @media screen and (max-width: 767px) {
-
   .MainVisual-Scroll-Btn {
     right: calc(50% + 16px);
     bottom: 28vmin;
@@ -452,42 +405,34 @@ a:active {
     line-height: 1.3333;
   }
 }
-
 .MainVisual-Scroll-Btn:hover {
-  transition: all .3s;
+  transition: all 0.3s;
   transform: scale(1.05);
 }
 
-@keyframes floatScrollText {
-
+@-webkit-keyframes floatScrollText {
   0% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(3px);
   }
-
   100% {
     transform: translateY(0);
   }
 }
 
 @keyframes floatScrollText {
-
   0% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(3px);
   }
-
   100% {
     transform: translateY(0);
   }
 }
-
 .Gallery {
   position: relative;
   display: flex;
@@ -497,9 +442,7 @@ a:active {
   padding-bottom: 111px;
   padding-left: 40px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Gallery {
     padding-top: 30px;
     padding-right: 0;
@@ -507,16 +450,13 @@ a:active {
     padding-left: 15px;
   }
 }
-
 .Gallery__Inner {
   position: relative;
   z-index: 1;
   width: 100%;
   max-width: 1280px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Gallery__Inner::after {
     position: absolute;
     right: 15px;
@@ -527,41 +467,34 @@ a:active {
     background-image: url(../img/gallery-arrow.svg);
     background-position: center;
     background-size: contain;
-    content: '';
+    content: "";
     animation: slideArrow 1.2s ease-in-out infinite reverse;
   }
 }
 
-@keyframes slideArrow {
-
+@-webkit-keyframes slideArrow {
   0% {
     right: 15px;
   }
-
   50% {
     right: 20px;
   }
-
   100% {
     right: 15px;
   }
 }
 
 @keyframes slideArrow {
-
   0% {
     right: 15px;
   }
-
   50% {
     right: 20px;
   }
-
   100% {
     right: 15px;
   }
 }
-
 .Gallery-Title {
   position: relative;
   display: flex;
@@ -575,21 +508,18 @@ a:active {
   font-style: normal;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
 }
-
 @media screen and (max-width: 767px) {
-
   .Gallery-Title {
     margin-right: auto;
     margin-left: auto;
     width: 130px;
     height: 75px;
     font-size: 2.4rem;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
   }
 }
-
 .Gallery-Title::after {
   position: absolute;
   right: 28px;
@@ -599,13 +529,11 @@ a:active {
   height: 48px;
   background-color: #333333;
   border-radius: 2px;
-  content: '';
+  content: "";
   transform: rotate(-45deg);
   transform-origin: top left;
 }
-
 @media screen and (max-width: 767px) {
-
   .Gallery-Title::after {
     right: 50%;
     bottom: -24px;
@@ -619,9 +547,7 @@ a:active {
   justify-content: flex-end;
   margin-top: 66px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Gallery-Cards-Wrapper {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -637,13 +563,12 @@ a:active {
   justify-content: space-between;
   width: 1084px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Gallery-Cards {
     flex-wrap: nowrap;
     row-gap: 0;
-    column-gap: 32px;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
     width: 100%;
     min-height: 346px;
   }
@@ -657,39 +582,32 @@ a:active {
   background-color: #ffffff;
   border: 1px solid #333333;
   border-radius: 16px;
-  box-shadow: 0 12px 0 rgb(51 51 51 / 70%);
+  box-shadow: 0 12px 0 rgba(51, 51, 51, 0.7);
   cursor: pointer;
-  transition: all ease .4s;
+  transition: all ease 0.4s;
 }
-
 @media screen and (max-width: 1163px) {
-
   .Gallery-Card {
     width: 48.5239852399%;
   }
 }
-
 @media screen and (max-width: 767px) {
-
   .Gallery-Card {
     min-width: 340px;
     min-height: auto;
     max-height: 320px;
   }
 }
-
 .Gallery-Card:hover {
   box-shadow: none;
-  transition: all ease .5s;
+  transition: all ease 0.5s;
   transform: translateY(12px);
 }
-
 .Gallery-Card:hover .Gallery-Card-Body::before {
   opacity: 1;
-  transition: linear .3s;
+  transition: linear 0.3s;
   transform: scale(1, 1);
 }
-
 .Gallery-Card:last-of-type::after {
   position: absolute;
   top: 0;
@@ -697,7 +615,7 @@ a:active {
   display: block;
   width: 15px;
   height: 100%;
-  content: '';
+  content: "";
 }
 
 .Gallery-Card-Image {
@@ -717,7 +635,6 @@ a:active {
   padding-bottom: 15px;
   padding-left: 15px;
 }
-
 .Gallery-Card-Body::before {
   position: absolute;
   top: 0;
@@ -727,8 +644,8 @@ a:active {
   height: 6px;
   background-color: #ffcd64;
   opacity: 0;
-  content: '';
-  transition: linear .2s;
+  content: "";
+  transition: linear 0.2s;
   transform: scale(0, 1);
   transform-origin: top left;
 }
@@ -738,7 +655,7 @@ a:active {
   font-style: normal;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
 }
 
 .Gallery-Card-Lead {
@@ -746,7 +663,7 @@ a:active {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 
 .Gallery-Card-Target {
@@ -755,7 +672,7 @@ a:active {
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: .04em;
+  letter-spacing: 0.04em;
 }
 
 .Gallery-Card-Badge {
@@ -772,7 +689,7 @@ a:active {
   color: #ffffff;
 }
 
-.Gallery-Bg-Diamond-TopRight {
+.Gallery-Bg-Diamond__TopRight {
   position: absolute;
   z-index: 0;
   top: -70px;
@@ -784,17 +701,13 @@ a:active {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 @media screen and (min-width: 1440px) {
-
-  .Gallery-Bg-Diamond-TopRight {
+  .Gallery-Bg-Diamond__TopRight {
     right: calc(50% - 670px - 85px);
   }
 }
-
 @media screen and (max-width: 767px) {
-
-  .Gallery-Bg-Diamond-TopRight {
+  .Gallery-Bg-Diamond__TopRight {
     top: 34px;
     right: -185px;
     width: 398px;
@@ -802,7 +715,7 @@ a:active {
   }
 }
 
-.Gallery-Bg-Diamond-BottomLeft {
+.Gallery-Bg-Diamond__BottomLeft {
   position: absolute;
   z-index: 0;
   bottom: -83px;
@@ -814,17 +727,13 @@ a:active {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 @media screen and (min-width: 1440px) {
-
-  .Gallery-Bg-Diamond-BottomLeft {
+  .Gallery-Bg-Diamond__BottomLeft {
     left: calc(50% - 670px - 193px);
   }
 }
-
 @media screen and (max-width: 767px) {
-
-  .Gallery-Bg-Diamond-BottomLeft {
+  .Gallery-Bg-Diamond__BottomLeft {
     bottom: -59px;
     left: -167px;
     width: 398px;
@@ -843,9 +752,7 @@ a:active {
   justify-content: center;
   width: 100%;
 }
-
 @media screen and (max-width: 767px) {
-
   .Gallery-Line-Box {
     bottom: -45px;
   }
@@ -858,9 +765,7 @@ a:active {
   background-color: #333333;
   border-radius: 2px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Gallery-Line {
     height: 90px;
   }
@@ -874,9 +779,7 @@ a:active {
   padding-bottom: 137px;
   padding-left: 40px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Past {
     padding-right: 0;
     padding-bottom: 127px;
@@ -900,21 +803,18 @@ a:active {
   font-style: normal;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
 }
-
 @media screen and (max-width: 767px) {
-
   .Past-Title {
     margin-right: auto;
     margin-left: auto;
     width: 130px;
     height: 75px;
     font-size: 2.4rem;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
   }
 }
-
 .Past-Title::after {
   position: absolute;
   right: 28px;
@@ -924,13 +824,11 @@ a:active {
   height: 48px;
   background-color: #333333;
   border-radius: 2px;
-  content: '';
+  content: "";
   transform: rotate(-45deg);
   transform-origin: top left;
 }
-
 @media screen and (max-width: 767px) {
-
   .Past-Title::after {
     right: 50%;
     bottom: -24px;
@@ -947,20 +845,15 @@ a:active {
   margin-top: 60px;
   width: 100%;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality {
     margin-top: 64px;
   }
 }
-
 .Personality__Inner {
   width: 1280px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality__Inner {
     width: 100%;
   }
@@ -971,36 +864,28 @@ a:active {
   width: 100%;
   height: auto;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality-Media {
     padding-right: 15px;
     padding-left: 15px;
   }
 }
-
 .Personality-Media__Inner {
   display: flex;
   gap: 5.625%;
   align-items: center;
   width: 100%;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality-Media__Inner {
     flex-direction: column;
     gap: 32px;
   }
 }
-
 .Personality-Media + * {
   margin-top: 90px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality-Media + * {
     margin-top: 108px;
   }
@@ -1009,9 +894,7 @@ a:active {
 .Personality-Media:nth-of-type(1)::before {
   display: none;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality-Media:nth-of-type(1)::before {
     position: absolute;
     z-index: -1;
@@ -1023,16 +906,14 @@ a:active {
     background: url(../img/bg-oval.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    content: '';
+    content: "";
   }
 }
 
 .Personality-Media:nth-of-type(2)::before {
   display: none;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality-Media:nth-of-type(2)::before {
     position: absolute;
     z-index: -1;
@@ -1044,16 +925,14 @@ a:active {
     background: url(../img/bg-trapezoid-upper-sm.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    content: '';
+    content: "";
   }
 }
 
 .Personality-Media:nth-of-type(3)::before {
   display: none;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality-Media:nth-of-type(3)::before {
     position: absolute;
     z-index: -1;
@@ -1065,7 +944,7 @@ a:active {
     background: url(../img/bg-trapezoid-lower-sm.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    content: '';
+    content: "";
   }
 }
 
@@ -1078,11 +957,9 @@ a:active {
   width: 4px;
   height: 91px;
   background-color: #333333;
-  content: '';
+  content: "";
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality-Media::after {
     bottom: -72px;
     height: 72px;
@@ -1096,18 +973,14 @@ a:active {
 .Personality-Media:nth-of-type(2) .Personality-Media__Inner {
   flex-direction: row-reverse;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality-Media:nth-of-type(2) .Personality-Media__Inner {
     flex-direction: column;
   }
 }
-
 .Personality-Media:nth-of-type(2) .Personality-Media-Image {
   min-height: 300px;
 }
-
 .Personality-Media:nth-of-type(2) .Personality-Media-Body {
   padding-bottom: 40px;
 }
@@ -1120,9 +993,7 @@ a:active {
   background-position: center;
   background-size: contain;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality-Media-Image {
     display: none;
   }
@@ -1131,9 +1002,7 @@ a:active {
 .Personality-Media-Image-SP {
   display: none;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality-Media-Image-SP {
     display: block;
     width: 100%;
@@ -1154,9 +1023,7 @@ a:active {
   background-color: #ffffff;
   border-radius: 16px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality-Media-Body {
     width: 100%;
     padding-top: 50px;
@@ -1171,12 +1038,10 @@ a:active {
   font-style: normal;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   white-space: nowrap;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality-Media-Title {
     font-size: 2.2rem;
     line-height: 1.3727;
@@ -1188,11 +1053,9 @@ a:active {
   margin-top: 20px;
   font-weight: 400;
   line-height: 2.0625;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
 }
-
 @media screen and (max-width: 767px) {
-
   .Personality-Media-Text {
     font-size: 1.4rem;
     line-height: 2.2857;
@@ -1205,15 +1068,12 @@ a:active {
   width: 100%;
   padding-top: 120px;
 }
-
 .Ability__Inner {
   margin-right: auto;
   margin-left: auto;
   max-width: 1280px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Ability__Inner {
     padding-right: 15px;
     padding-left: 15px;
@@ -1255,9 +1115,7 @@ a:active {
   background-color: #ffffff;
   text-align: center;
 }
-
 @media screen and (max-width: 767px) {
-
   .Ability-Box {
     width: 100%;
     height: auto;
@@ -1268,7 +1126,6 @@ a:active {
     text-align: left;
   }
 }
-
 .Ability-Box::before {
   position: absolute;
   top: -25px;
@@ -1277,19 +1134,16 @@ a:active {
   width: 1px;
   height: 70px;
   background-color: #707070;
-  content: '';
+  content: "";
   transform: rotate(-45deg);
 }
-
 @media screen and (max-width: 767px) {
-
   .Ability-Box::before {
     top: -12px;
     right: 8px;
     height: 41px;
   }
 }
-
 .Ability-Box::after {
   position: absolute;
   bottom: -25px;
@@ -1298,12 +1152,10 @@ a:active {
   width: 1px;
   height: 70px;
   background-color: #707070;
-  content: '';
+  content: "";
   transform: rotate(-45deg);
 }
-
 @media screen and (max-width: 767px) {
-
   .Ability-Box::after {
     bottom: -12px;
     left: 8px;
@@ -1316,11 +1168,9 @@ a:active {
   font-style: normal;
   font-weight: 500;
   line-height: 1.4583;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
-
 @media screen and (max-width: 767px) {
-
   .Ability-Title {
     font-size: 1.6rem;
     line-height: 1.625;
@@ -1334,9 +1184,7 @@ a:active {
   height: 4px;
   background-color: #ffcd64;
 }
-
 @media screen and (max-width: 767px) {
-
   .Ability-Partition {
     margin-top: 31px;
   }
@@ -1346,11 +1194,9 @@ a:active {
   margin-top: 31px;
   font-size: 1.8rem;
   line-height: 1;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
 }
-
 @media screen and (max-width: 767px) {
-
   .Ability-List {
     font-size: 1.4rem;
     line-height: 1.6428;
@@ -1358,17 +1204,14 @@ a:active {
 }
 
 .Ability-List-Term {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 400;
 }
-
 .Ability-List-Description + .Ability-List-Term {
   margin-top: 28px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Ability-List-Description + .Ability-List-Term {
     margin-top: 22px;
   }
@@ -1376,19 +1219,17 @@ a:active {
 
 .Ability-List-Description {
   margin-top: 6px;
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 300;
 }
-
 @media screen and (max-width: 767px) {
-
   .Ability-List-Description {
     margin-top: 2px;
   }
 }
 
-.Past-Bg-Oval-TopRight {
+.Past-Bg-Oval__TopRight {
   position: absolute;
   z-index: 0;
   top: 0;
@@ -1400,22 +1241,18 @@ a:active {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 @media screen and (min-width: 1440px) {
-
-  .Past-Bg-Oval-TopRight {
+  .Past-Bg-Oval__TopRight {
     right: calc(50% - 906px + 128px);
   }
 }
-
 @media screen and (max-width: 767px) {
-
-  .Past-Bg-Oval-TopRight {
+  .Past-Bg-Oval__TopRight {
     display: none;
   }
 }
 
-.Past-Bg-Trapezoid-MiddleRight {
+.Past-Bg-Trapezoid__MiddleRight {
   position: absolute;
   z-index: 0;
   bottom: 448px;
@@ -1427,17 +1264,13 @@ a:active {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 @media screen and (min-width: 1440px) {
-
-  .Past-Bg-Trapezoid-MiddleRight {
+  .Past-Bg-Trapezoid__MiddleRight {
     left: calc(50% - 774px + 70px);
   }
 }
-
 @media screen and (max-width: 767px) {
-
-  .Past-Bg-Trapezoid-MiddleRight {
+  .Past-Bg-Trapezoid__MiddleRight {
     display: none;
   }
 }
@@ -1453,16 +1286,13 @@ a:active {
   padding-bottom: 120px;
   padding-left: 40px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Future {
     padding-top: 98px;
     padding-right: 15px;
     padding-left: 15px;
   }
 }
-
 .Future__Inner {
   position: relative;
   z-index: 1;
@@ -1483,21 +1313,18 @@ a:active {
   font-style: normal;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
 }
-
 @media screen and (max-width: 767px) {
-
   .Future-Title {
     margin-right: auto;
     margin-left: auto;
     width: 130px;
     height: 75px;
     font-size: 2.4rem;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
   }
 }
-
 .Future-Title::after {
   position: absolute;
   right: 28px;
@@ -1507,13 +1334,11 @@ a:active {
   height: 48px;
   background-color: #333333;
   border-radius: 2px;
-  content: '';
+  content: "";
   transform: rotate(-45deg);
   transform-origin: top left;
 }
-
 @media screen and (max-width: 767px) {
-
   .Future-Title::after {
     right: 50%;
     bottom: -24px;
@@ -1528,9 +1353,7 @@ a:active {
   margin-top: 60px;
   width: 100%;
 }
-
 @media screen and (max-width: 959px) {
-
   .Future-Cards {
     flex-direction: column;
     row-gap: 50px;
@@ -1539,9 +1362,7 @@ a:active {
     width: auto;
   }
 }
-
 @media screen and (max-width: 767px) {
-
   .Future-Cards {
     margin-right: 0;
     margin-left: 0;
@@ -1559,18 +1380,14 @@ a:active {
   background-color: #ffffff;
   border-radius: 16px;
 }
-
 @media screen and (max-width: 959px) {
-
   .Future-Card {
     width: 100%;
     min-height: auto;
     padding-bottom: 48px;
   }
 }
-
 @media screen and (max-width: 767px) {
-
   .Future-Card {
     min-height: 406px;
     padding-top: 40px;
@@ -1579,7 +1396,6 @@ a:active {
     padding-left: 17px;
   }
 }
-
 .Future-Card + .Future-Card::after {
   position: absolute;
   top: 50%;
@@ -1591,12 +1407,10 @@ a:active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  content: '';
+  content: "";
   transform: translateY(-50%);
 }
-
 @media screen and (max-width: 959px) {
-
   .Future-Card + .Future-Card::after {
     top: -30px;
     left: 50%;
@@ -1611,11 +1425,9 @@ a:active {
   position: relative;
   width: 124px;
   height: 80px;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
-
 @media screen and (max-width: 767px) {
-
   .Future-Card-Title {
     width: 104px;
     height: 60px;
@@ -1626,15 +1438,13 @@ a:active {
   position: absolute;
   top: 0;
   left: 0;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-size: 8rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1;
 }
-
 @media screen and (max-width: 767px) {
-
   .Future-Card-Title-Number {
     font-size: 6rem;
   }
@@ -1649,9 +1459,7 @@ a:active {
   font-weight: 700;
   line-height: 1.6666;
 }
-
 @media screen and (max-width: 767px) {
-
   .Future-Card-Title-Jp {
     bottom: 4px;
     font-size: 1.6rem;
@@ -1670,9 +1478,7 @@ a:active {
   height: 4px;
   background-color: #ffcd64;
 }
-
 @media screen and (max-width: 767px) {
-
   .Future-Card-Partition {
     margin-top: 30px;
   }
@@ -1683,20 +1489,18 @@ a:active {
   font-style: normal;
   font-weight: 400;
   line-height: 1.6875;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
 }
-
 @media screen and (max-width: 767px) {
-
   .Future-Card-Text {
     margin-top: 30px;
     font-size: 1.4rem;
     line-height: 1.6429;
-    letter-spacing: .015em;
+    letter-spacing: 0.015em;
   }
 }
 
-.Future-Bg-Cylinder-TopRight {
+.Future-Bg-Cylinder__TopRight {
   position: absolute;
   z-index: 0;
   top: -64px;
@@ -1708,24 +1512,18 @@ a:active {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 @media screen and (min-width: 1440px) {
-
-  .Future-Bg-Cylinder-TopRight {
+  .Future-Bg-Cylinder__TopRight {
     right: calc(50% - 685px - 220px);
   }
 }
-
 @media screen and (max-width: 959px) {
-
-  .Future-Bg-Cylinder-TopRight {
+  .Future-Bg-Cylinder__TopRight {
     right: -13%;
   }
 }
-
 @media screen and (max-width: 767px) {
-
-  .Future-Bg-Cylinder-TopRight {
+  .Future-Bg-Cylinder__TopRight {
     top: 1%;
     right: -47.5%;
     width: 95.31%;
@@ -1733,7 +1531,7 @@ a:active {
   }
 }
 
-.Future-Bg-Pallarelogram-BottomLeft {
+.Future-Bg-Pallarelogram__BottomLeft {
   position: absolute;
   z-index: 0;
   bottom: -219px;
@@ -1745,24 +1543,18 @@ a:active {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 @media screen and (min-width: 1440px) {
-
-  .Future-Bg-Pallarelogram-BottomLeft {
+  .Future-Bg-Pallarelogram__BottomLeft {
     left: calc(50% - 976px - 193px);
   }
 }
-
 @media screen and (max-width: 959px) {
-
-  .Future-Bg-Pallarelogram-BottomLeft {
+  .Future-Bg-Pallarelogram__BottomLeft {
     left: -30%;
   }
 }
-
 @media screen and (max-width: 767px) {
-
-  .Future-Bg-Pallarelogram-BottomLeft {
+  .Future-Bg-Pallarelogram__BottomLeft {
     bottom: -18%;
     left: -50%;
     width: 100.6%;
@@ -1783,9 +1575,7 @@ a:active {
   background-color: #1d293f;
   color: #ffffff;
 }
-
 @media screen and (max-width: 767px) {
-
   .Footer {
     padding-top: 105px;
     padding-right: 15px;
@@ -1793,7 +1583,6 @@ a:active {
     padding-left: 15px;
   }
 }
-
 .Footer__Inner {
   width: 1280px;
 }
@@ -1806,9 +1595,7 @@ a:active {
   margin-left: 90px;
   min-width: 550px;
 }
-
 @media screen and (max-width: 767px) {
-
   .Profile {
     flex-direction: column;
     gap: 40px;
@@ -1826,9 +1613,7 @@ a:active {
   background-position: center;
   background-size: contain;
 }
-
 @media screen and (max-width: 767px) {
-
   .Profile-Image {
     width: 180px;
     height: 180px;
@@ -1841,9 +1626,7 @@ a:active {
   font-weight: 400;
   line-height: 1;
 }
-
 @media screen and (max-width: 767px) {
-
   .Profile-Name-Jp {
     display: block;
     font-size: 2rem;
@@ -1852,16 +1635,14 @@ a:active {
 
 .Profile-Name-En {
   margin-left: 20px;
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 300;
   line-height: 1;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
-
 @media screen and (max-width: 767px) {
-
   .Profile-Name-En {
     display: block;
     margin-top: 8px;
@@ -1874,11 +1655,9 @@ a:active {
   font-style: normal;
   font-weight: 400;
   line-height: 1.6875;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
 }
-
 @media screen and (max-width: 767px) {
-
   .Profile-Text {
     margin-top: 24px;
     font-size: 1.4rem;
@@ -1891,9 +1670,7 @@ a:active {
   width: 100%;
   text-align: right;
 }
-
 @media screen and (max-width: 767px) {
-
   .Profile-Copy {
     margin-top: 54px;
     text-align: center;
@@ -1901,16 +1678,14 @@ a:active {
 }
 
 .Profile-Copy-Text {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 300;
   line-height: 1.2857;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
-
 @media screen and (max-width: 767px) {
-
   .Profile-Copy-Text {
     font-size: 1rem;
     line-height: 1.5;
@@ -1931,11 +1706,9 @@ a:active {
   border: 2px solid #333333;
   border-radius: 50%;
   opacity: 0;
-  transition: all ease .5s;
+  transition: all ease 0.5s;
 }
-
 @media screen and (max-width: 767px) {
-
   .ToTopBtn {
     right: 15px;
     bottom: 40px;
@@ -1946,11 +1719,10 @@ a:active {
 
 .ToTopBtn.is-appear {
   opacity: 1;
-  transition: all ease .5s;
+  transition: all ease 0.5s;
 }
-
 .ToTopBtn.is-appear:hover {
-  transition: all ease .3s;
+  transition: all ease 0.3s;
   transform: scale(1.05);
 }
 
@@ -1962,9 +1734,7 @@ a:active {
   background-position: center;
   background-size: contain;
 }
-
 @media screen and (max-width: 767px) {
-
   .ToTopBtn-Arrow {
     width: 13px;
     height: 14px;
@@ -1986,36 +1756,29 @@ a:active {
   fill: none;
 }
 
-@keyframes drawLine {
-
+@-webkit-keyframes drawLine {
   100% {
     stroke-dashoffset: 0;
   }
 }
 
 @keyframes drawLine {
-
   100% {
     stroke-dashoffset: 0;
   }
 }
-
 .MainVisual-Footprints-Area {
   position: absolute;
   bottom: 18.56%;
   left: 36.25%;
   width: 13.75%;
 }
-
 @media screen and (max-width: 1439px) {
-
   .MainVisual-Footprints-Area {
     bottom: 12vw;
   }
 }
-
 @media screen and (max-width: 767px) {
-
   .MainVisual-Footprints-Area {
     display: none;
   }
@@ -2035,58 +1798,56 @@ a:active {
   fill-opacity: 0;
   stroke-dasharray: 300;
   stroke-dashoffset: 301;
-  transition: fill-opacity .1s;
-  animation: drawLine .1s linear forwards;
-  animation: drawLine .1s linear forwards;
+  transition: fill-opacity 0.1s;
+  -webkit-animation: drawLine 0.1s linear forwards;
+          animation: drawLine 0.1s linear forwards;
 }
 
 #MainVisual-Footprint01.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
 }
 
 #MainVisual-Footprint02.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
-  transition-delay: .3s;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.3s;
 }
 
 #MainVisual-Footprint03.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
-  transition-delay: .6s;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.6s;
 }
 
 #MainVisual-Footprint04.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
-  transition-delay: .9s;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.9s;
 }
 
 #MainVisual-Footprint05.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 1.2s;
 }
 
 #MainVisual-Footprint06.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 1.5s;
 }
 
 .MainVisual-SP-Footprints-Area {
   display: none;
 }
-
 @media screen and (max-width: 767px) {
-
   .MainVisual-SP-Footprints-Area {
     position: absolute;
     bottom: 50px;
@@ -2110,58 +1871,56 @@ a:active {
   fill-opacity: 0;
   stroke-dasharray: 300;
   stroke-dashoffset: 301;
-  transition: fill-opacity .1s;
-  animation: drawLine .1s linear forwards;
-  animation: drawLine .1s linear forwards;
+  transition: fill-opacity 0.1s;
+  -webkit-animation: drawLine 0.1s linear forwards;
+          animation: drawLine 0.1s linear forwards;
 }
 
 #MainVisual-SP-Footprint01.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
 }
 
 #MainVisual-SP-Footprint02.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
-  transition-delay: .3s;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.3s;
 }
 
 #MainVisual-SP-Footprint03.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
-  transition-delay: .6s;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.6s;
 }
 
 #MainVisual-SP-Footprint04.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
-  transition-delay: .9s;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.9s;
 }
 
 #MainVisual-SP-Footprint05.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 1.2s;
 }
 
 #MainVisual-SP-Footprint06.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 1.5s;
 }
 
 .Ability-SP-Footprints-Area {
   display: none;
 }
-
 @media screen and (max-width: 767px) {
-
   .Ability-SP-Footprints-Area {
     position: absolute;
     z-index: 1;
@@ -2187,49 +1946,49 @@ a:active {
   fill-opacity: 0;
   stroke-dasharray: 300;
   stroke-dashoffset: 301;
-  transition: fill-opacity .1s;
-  animation: drawLine .1s linear forwards;
-  animation: drawLine .1s linear forwards;
+  transition: fill-opacity 0.1s;
+  -webkit-animation: drawLine 0.1s linear forwards;
+          animation: drawLine 0.1s linear forwards;
 }
 
 #Ability-SP-Footprint01.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
 }
 
 #Ability-SP-Footprint02.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
-  transition-delay: .3s;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.3s;
 }
 
 #Ability-SP-Footprint03.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
-  transition-delay: .6s;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.6s;
 }
 
 #Ability-SP-Footprint04.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
-  transition-delay: .9s;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.9s;
 }
 
 #Ability-SP-Footprint05.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 1.2s;
 }
 
 #Ability-SP-Footprint06.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 1.5s;
 }
 
@@ -2244,9 +2003,7 @@ a:active {
   padding-left: 69px;
   pointer-events: none;
 }
-
 @media screen and (max-width: 959px) {
-
   .Ability-Animation-Area {
     top: 100px;
   }
@@ -2256,16 +2013,12 @@ a:active {
   min-width: 1360px;
   height: 716px;
 }
-
 @media screen and (max-width: 959px) {
-
   #Ability-Freeline {
     min-width: 960px;
   }
 }
-
 @media screen and (max-width: 767px) {
-
   #Ability-Freeline {
     display: none;
   }
@@ -2279,9 +2032,9 @@ a:active {
   fill-opacity: 0;
   stroke-dasharray: 300;
   stroke-dashoffset: 301;
-  transition: fill-opacity .1s;
-  animation: drawLine .5s linear .3s forwards;
-  animation: drawLine .5s linear .3s forwards;
+  transition: fill-opacity 0.1s;
+  -webkit-animation: drawLine 0.5s linear 0.3s forwards;
+          animation: drawLine 0.5s linear 0.3s forwards;
 }
 
 #Line01,
@@ -2291,56 +2044,54 @@ a:active {
 }
 
 #Ability-Freeline #Line01.done .st1 {
-  animation: drawLine 1.5s linear forwards;
-  animation: drawLine 1.5s linear forwards;
+  -webkit-animation: drawLine 1.5s linear forwards;
+          animation: drawLine 1.5s linear forwards;
 }
 
 #Ability-Freeline #Line02.done .st1 {
-  animation: drawLine 1.5s linear 1.5s forwards;
-  animation: drawLine 1.5s linear 1.5s forwards;
+  -webkit-animation: drawLine 1.5s linear 1.5s forwards;
+          animation: drawLine 1.5s linear 1.5s forwards;
 }
 
 #Ability-Freeline #Footprint01.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
-  transition-delay: .5s;
+  transition: fill-opacity 0.3s;
+  transition-delay: 0.5s;
 }
 
 #Ability-Freeline #Footprint02.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
-  transition-delay: .8s;
+  transition: fill-opacity 0.3s;
+  transition-delay: 0.8s;
 }
 
 #Ability-Freeline #Footprint03.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
+  transition: fill-opacity 0.3s;
   transition-delay: 1.1s;
 }
 
 #Ability-Freeline #Footprint04.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
+  transition: fill-opacity 0.3s;
   transition-delay: 1.4s;
 }
 
 #Ability-Freeline #Footprint05.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
+  transition: fill-opacity 0.3s;
   transition-delay: 1.7s;
 }
 
 .Ability-SP-Freeline-Area {
   display: none;
 }
-
 @media screen and (max-width: 767px) {
-
   .Ability-SP-Freeline-Area {
     position: absolute;
     right: 0;
@@ -2376,9 +2127,7 @@ a:active {
   right: 0;
   width: 25.83%;
 }
-
 @media screen and (min-width: 1440px) {
-
   .Footer-Footprints-Area {
     top: -85px;
     right: calc(50% - 720px);
@@ -2386,9 +2135,7 @@ a:active {
     height: 318px;
   }
 }
-
 @media screen and (max-width: 767px) {
-
   .Footer-Footprints-Area {
     display: none;
   }
@@ -2416,33 +2163,28 @@ a:active {
   fill-opacity: 0;
   stroke-dasharray: 300;
   stroke-dashoffset: 301;
-  transition: fill-opacity .1s;
-  animation: drawLine .1s linear forwards;
-  animation: drawLine .1s linear forwards;
+  transition: fill-opacity 0.1s;
+  -webkit-animation: drawLine 0.1s linear forwards;
+          animation: drawLine 0.1s linear forwards;
 }
 
-@keyframes fadeOutFootprint {
-
+@-webkit-keyframes fadeOutFootprint {
   0% {
     fill: none;
     fill-opacity: 0;
   }
-
   50% {
     fill: #ffffff;
     fill-opacity: 1;
   }
-
   75% {
     fill: #ffffff;
     fill-opacity: 1;
   }
-
   85% {
     fill: #ffffff;
     fill-opacity: 1;
   }
-
   100% {
     fill: none;
     fill-opacity: 0;
@@ -2450,134 +2192,126 @@ a:active {
 }
 
 @keyframes fadeOutFootprint {
-
   0% {
     fill: none;
     fill-opacity: 0;
   }
-
   50% {
     fill: #ffffff;
     fill-opacity: 1;
   }
-
   75% {
     fill: #ffffff;
     fill-opacity: 1;
   }
-
   85% {
     fill: #ffffff;
     fill-opacity: 1;
   }
-
   100% {
     fill: none;
     fill-opacity: 0;
   }
 }
-
 #Footer-Footprint01.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
+  transition: fill-opacity 0.3s;
 }
 
 #Footer-Footprint02.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
-  transition-delay: .2s;
+  transition: fill-opacity 0.3s;
+  transition-delay: 0.2s;
 }
 
 #Footer-Footprint03.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
-  transition-delay: .4s;
+  transition: fill-opacity 0.3s;
+  transition-delay: 0.4s;
 }
 
 #Footer-Footprint04.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
-  transition-delay: .8s;
+  transition: fill-opacity 0.3s;
+  transition-delay: 0.8s;
 }
 
 #Footer-Footprint05.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
+  transition: fill-opacity 0.3s;
   transition-delay: 1s;
 }
 
 #Footer-Footprint06.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
+  transition: fill-opacity 0.3s;
   transition-delay: 1.2s;
 }
 
 #Footer-Footprint07.done .st2 {
-  animation: fadeOutFootprint 1s ease 1.2s forwards;
-  animation: fadeOutFootprint 1s ease 1.2s forwards;
+  -webkit-animation: fadeOutFootprint 1s ease 1.2s forwards;
+          animation: fadeOutFootprint 1s ease 1.2s forwards;
 }
 
 #Footer-Footprint08.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
+  transition: fill-opacity 0.3s;
   transition-delay: 2s;
 }
 
 #Footer-Footprint09.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
+  transition: fill-opacity 0.3s;
   transition-delay: 2.2s;
 }
 
 #Footer-Footprint10.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
+  transition: fill-opacity 0.3s;
   transition-delay: 2.4s;
 }
 
 #Footer-Footprint11.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
+  transition: fill-opacity 0.3s;
   transition-delay: 2.6s;
 }
 
 #Footer-Footprint12.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
+  transition: fill-opacity 0.3s;
   transition-delay: 2.8s;
 }
 
 #Footer-Footprint13.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
+  transition: fill-opacity 0.3s;
   transition-delay: 3s;
 }
 
 #Footer-Footprint14.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .3s;
+  transition: fill-opacity 0.3s;
   transition-delay: 3.2s;
 }
 
 .Footer-SP-Footprints-Area {
   display: none;
 }
-
 @media screen and (max-width: 767px) {
-
   .Footer-SP-Footprints-Area {
     position: absolute;
     z-index: 1;
@@ -2612,109 +2346,110 @@ a:active {
   fill-opacity: 0;
   stroke-dasharray: 300;
   stroke-dashoffset: 301;
-  transition: fill-opacity .1s;
-  animation: drawLine .1s linear forwards;
-  animation: drawLine .1s linear forwards;
+  transition: fill-opacity 0.1s;
+  -webkit-animation: drawLine 0.1s linear forwards;
+          animation: drawLine 0.1s linear forwards;
 }
 
 #Footer-SP-Footprint01.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
 }
 
 #Footer-SP-Footprint02.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
-  transition-delay: .2s;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.2s;
 }
 
 #Footer-SP-Footprint03.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
-  transition-delay: .4s;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.4s;
 }
 
 #Footer-SP-Footprint04.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
-  transition-delay: .6s;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.6s;
 }
 
 #Footer-SP-Footprint05.done .st2 {
   fill: #1a283e;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
-  transition-delay: .8s;
+  transition: fill-opacity 0.2s;
+  transition-delay: 0.8s;
 }
 
 #Footer-SP-Footprint06.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 1s;
 }
 
 #Footer-SP-Footprint07.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 1.2s;
 }
 
 #Footer-SP-Footprint08.done .st2 {
-  animation: fadeOutFootprint 1s ease 1.2s forwards;
-  animation: fadeOutFootprint 1s ease 1.2s forwards;
+  -webkit-animation: fadeOutFootprint 1s ease 1.2s forwards;
+          animation: fadeOutFootprint 1s ease 1.2s forwards;
 }
 
 #Footer-SP-Footprint09.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 2s;
 }
 
 #Footer-SP-Footprint10.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 2.2s;
 }
 
 #Footer-SP-Footprint11.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 2.4s;
 }
 
 #Footer-SP-Footprint12.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 2.6s;
 }
 
 #Footer-SP-Footprint13.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 2.8s;
 }
 
 #Footer-SP-Footprint14.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 3s;
 }
 
 #Footer-SP-Footprint15.done .st2 {
   fill: #ffffff;
   fill-opacity: 1;
-  transition: fill-opacity .2s;
+  transition: fill-opacity 0.2s;
   transition-delay: 3.2s;
 }
+/*# sourceMappingURL=style.css.map */
