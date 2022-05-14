@@ -132,7 +132,11 @@ $accentColor: #ffcd64;
   background-size: cover;
 
   @include mediaQuery.mq {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
     padding-top: (218 / 290 * 100%);
+    background-size: contain;
   }
 }
 
