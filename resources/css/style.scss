@@ -919,10 +919,11 @@ $accentColor: #ffcd64;
   @include mediaQuery.mq {
     display: block;
     width: 100%;
+    max-width: 500px;
     padding-top: (230 / 290 * 100%);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
   }
 }
 
