@@ -1205,9 +1205,7 @@ a:active {
 }
 
 .Ability-List-Term {
-  font-family: "Josefin Sans";
-  font-style: normal;
-  font-weight: 400;
+  line-height: 1.6667;
 }
 .Ability-List-Description + .Ability-List-Term {
   margin-top: 28px;

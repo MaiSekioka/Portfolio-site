@@ -1111,9 +1111,7 @@ $accentColor: #ffcd64;
 }
 
 .Ability-List-Term {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 400;
+  line-height: 1.6667;
 
   .Ability-List-Description + & {
     margin-top: 28px;
