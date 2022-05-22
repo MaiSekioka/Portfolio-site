@@ -695,7 +695,7 @@ $accentColor: #ffcd64;
   width: 100%;
   padding-top: 98px;
   padding-right: 40px;
-  padding-bottom: 137px;
+  padding-bottom: 112px;
   padding-left: 40px;
 
   @include mediaQuery.mq {
@@ -1018,10 +1018,10 @@ $accentColor: #ffcd64;
 .Ability-Box {
   position: relative;
   width: 700px;
-  height: 500px;
-  padding-top: 56px;
+  height: 760px;
+  padding-top: 48px;
   padding-right: 53px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   padding-left: 53px;
   background-color: #ffffff;
   text-align: center;
@@ -1033,7 +1033,6 @@ $accentColor: #ffcd64;
     padding-right: 17px;
     padding-bottom: 50px;
     padding-left: 17px;
-    text-align: left;
   }
 
   &::before {
@@ -1086,38 +1085,39 @@ $accentColor: #ffcd64;
   }
 }
 
-.Ability-Partition {
-  display: inline-block;
-  margin-top: 35px;
-  width: 40px;
-  height: 4px;
-  background-color: $accentColor;
-
+.Ability-LearningPeriod-Image {
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 330px;
+  max-height: 220px;
   @include mediaQuery.mq {
-    margin-top: 31px;
+    margin-top: 32px;
   }
 }
 
 .Ability-List {
-  margin-top: 31px;
+  margin-top: 29px;
   font-size: 1.8rem;
   line-height: 1;
   letter-spacing: .02em;
 
   @include mediaQuery.mq {
+    margin-top: 20px;
     font-size: 1.4rem;
     line-height: 1.6428;
   }
 }
 
 .Ability-List-Term {
+  font-weight: 500;
   line-height: 1.6667;
 
   .Ability-List-Description + & {
-    margin-top: 28px;
+    margin-top: 16px;
 
     @include mediaQuery.mq {
-      margin-top: 22px;
+      margin-top: 12px;
     }
   }
 }
@@ -1130,6 +1130,18 @@ $accentColor: #ffcd64;
 
   @include mediaQuery.mq {
     margin-top: 2px;
+  }
+}
+
+.Ability-LowerArrow-Image {
+  margin-top: 36px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 17px;
+  max-height: 48px;
+
+  @include mediaQuery.mq {
+    margin-top: 24px;
   }
 }
 
@@ -1625,7 +1637,7 @@ $accentColor: #ffcd64;
   stroke: #1a283e;
   stroke-linecap: round;
   stroke-miterlimit: 10;
-  stroke-width: 2;
+  stroke-width: 6;
 }
 
 .st2 {
@@ -1865,7 +1877,6 @@ $accentColor: #ffcd64;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-left: 69px;
   pointer-events: none;
 
   @include mediaQuery.mq(lmd) {
@@ -1874,11 +1885,12 @@ $accentColor: #ffcd64;
 }
 
 #Ability-Freeline {
-  min-width: 1360px;
-  height: 716px;
+  min-width: 1320px;
+  height: 942px;
+  padding-left: 80px;
 
   @include mediaQuery.mq(lmd) {
-    min-width: 960px;
+    min-width: 1100px;
   }
 
   @include mediaQuery.mq {
@@ -1900,15 +1912,15 @@ $accentColor: #ffcd64;
 
 #Line01,
 #Line02 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 301;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 801;
 }
 
-#Ability-Freeline #Line01.done .st1 {
+#Ability-Freeline #Line01.done {
   animation: drawLine 1.5s linear forwards;
 }
 
-#Ability-Freeline #Line02.done .st1 {
+#Ability-Freeline #Line02.done {
   animation: drawLine 1.5s linear 1.5s forwards;
 }
 
