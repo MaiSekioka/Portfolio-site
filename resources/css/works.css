@@ -483,7 +483,7 @@ a:active {
 }
 @media screen and (max-width: 767px) {
   .Introduce-Media-Time-Text {
-    font-size: 1.6rem;
+    margin-top: 42px;
     line-height: 1.6875;
   }
 }
@@ -499,7 +499,6 @@ a:active {
 }
 @media screen and (max-width: 767px) {
   .Introduce-Media-Technique-Text {
-    font-size: 1.6rem;
     line-height: 1.6875;
   }
 }
@@ -515,7 +514,6 @@ a:active {
 }
 @media screen and (max-width: 767px) {
   .Introduce-Media-DesignComp-Text {
-    font-size: 1.6rem;
     line-height: 1.6875;
   }
 }
