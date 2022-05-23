@@ -397,7 +397,6 @@ $accentColor: #ffcd64;
   word-break: break-all;
 
   @include mediaQuery.mq {
-    margin-top: 44px;
     font-size: 1.6rem;
     line-height: 1.6875;
   }
@@ -413,7 +412,6 @@ $accentColor: #ffcd64;
   word-break: break-all;
 
   @include mediaQuery.mq {
-    margin-top: 24px;
     font-size: 1.6rem;
     line-height: 1.6875;
   }
@@ -429,7 +427,6 @@ $accentColor: #ffcd64;
   word-break: break-all;
 
   @include mediaQuery.mq {
-    margin-top: 24px;
     font-size: 1.6rem;
     line-height: 1.6875;
   }
